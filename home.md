@@ -33,6 +33,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [[Technical Docs|Advanced/Technical Docs]]
 
 ### Misc:
+- [[Frequently Requested Feature Requests|Misc/Frequently%20Requested%20Feature%20Requests]]
 - [[Replacing The Logo|Misc/Replacing The Logo]]
 - [[Translations|Misc/Translations]]
 - [[Project Roadmap|Misc/Roadmap]]

@@ -25,6 +25,10 @@ Common issues and steps you can take to fix them.
 >| 
 >| `LOGGING__LOGLEVEL__DEFAULT=Error`
 
+>| ### Data Missing after Update to Latest Version
+>|
+>| You didn't persist your docker volumes for, check your docker-compose file. All your data should still be there however, they might just be anonymous volumes that you have to re-link back to the container.
+
 ## Locale Issues
 
 >| ### Can't input values in "," format / shows up as 0.

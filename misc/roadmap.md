@@ -1,7 +1,34 @@
 # Roadmap
 
+## 1.3.9
+Scheduled Release: TBD
+
+### Objectives
+- Fix AdjustedOdometer endpoint with decimal odometer multiplier
+- Move Delete Vehicle button into Edit Vehicle modal(Issue: #637)
+- Enter key to submit on Forms(Issue: #639)
+- Automatically create app schema in existing Postgres container
+- Remastered Admin Panel
+- Improve Code Maintainability
+- Add functionality to edit extra fields for multiple records(Issue: #483)
+- Fix bug with inverted bar chart colors with metric calculations(Issue: #649)
+- Add Attachment Exports for Notes
+- Add emphasis lines for API methods in documentation
+- Load sponsors in AJAX for users with slower internet connection
+- Fix bug with average/min/max fuel mileage labels
+
+## 1.3.8
+Released 09/24/2024
+
+### Objectives
+- Add Vehicle Info endpoint documentation
+- Add endpoint to get adjusted odometer for vehicle
+- Fix Light mode issue on PC with dark mode preference(Issue: #630)
+- Add vehicle flag to indicate odometer entry is optional(Issue: #619, #563, #312)
+- Updated demo default file
+
 ## 1.3.7
-Scheduled Release TBD
+Released 09/23/2024
 
 ### Objectives
 - Add Vehicle Info endpoint for third party widgets/dashboard
@@ -13,6 +40,7 @@ Scheduled Release TBD
 - Add color-coded icons for Planner Items(Issue: #598)
 - Add custom thresholds for Reminders(Issue: #609)
 - Add adaptive theme if Dark Mode is not enabled(Issue: #603)
+- Add ability to disable Registration(Issue: #618)
 
 ## 1.3.6
 Released 08/26/2024

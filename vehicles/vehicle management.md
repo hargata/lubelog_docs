@@ -3,7 +3,7 @@
 ## Adding a Vehicle
 To add a vehicle, simply click on the green "+" button in the "Garage" tab. A dialog will then prompt you for the following details of the vehicle you wish to add: Year, Make, Model, License Plate, and optionally, a picture of the vehicle. If it's an Electric Vehicle, you should check the "Electric Vehicle" switch. This ensures that "fuel" economy is measured in kWh instead of gallons or liters.
 
-![](/Vehicles/Vehicle%20Management/a/image-1726782172201.png)
+![](/Vehicles/Vehicle%20Management/a/image-1727554163143.png)
 
 Once you're done, click "Add New Vehicle" and the vehicle will now be visible in the Garage Tab.
 
@@ -44,7 +44,7 @@ On mobile, make sure the Garage tab is selected and long hold on the garage menu
 ## Editing a Vehicle
 To edit an existing vehicle, go into the vehicle details by clicking on the vehicle tile in the Garage. If you're on a computer/tablet, there will be a yellow button on the top right of the screen, click it to edit details regarding the vehicle.
 
-![](/Vehicles/Vehicle%20Management/a/image-1726782194546.png)
+![](/Vehicles/Vehicle%20Management/a/image-1727554250691.png)
 
 On mobile devices, the "Edit Vehicle" button is available within the menu
 

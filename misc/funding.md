@@ -20,9 +20,9 @@ Note that the names are automatically generated but exceptions can be applied, i
 
 ## Lifetime Sponsor
 
-Become a lifetime sponsor by making a one-time $500 donation to LubeLogger, a display name of your choice will be displayed in the Lifetime Sponsors section in the About page.
+Become a lifetime sponsor by making a one-time $500 donation to LubeLogger, a display name of your choice will be displayed in the Lifetime Sponsors section in the About page. Please contact us via email for payment and display name details.
 
-[Become a Lifetime Sponsor](https://buy.stripe.com/6oEbMo6Oj4bCafS7st)
+[Contact Us](mailto:hargatasoftworks@gmail.com)
 
 ## Donating via Stripe
 

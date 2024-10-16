@@ -2,7 +2,7 @@
 
 The Dashboard is where you get an overview of your vehicle. It is the default tab that the user will see when they click into a vehicle and it is also the only tab that cannot be hidden.
 
-![](/Vehicles/Dashboard/a/image-1726782300852.png)
+![](/Vehicles/Dashboard/a/image-1727554329575.png)
 
 The Dashboard includes the following data:
 - Expenses By Type By Year/All Time(Top-Left)

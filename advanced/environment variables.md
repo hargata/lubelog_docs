@@ -1,12 +1,16 @@
 # Environment Variables
 
 These are all of the environment variables you can pass into LubeLogger and what they do
+
+> [!NOTE]
+> Save time and effort using the [LubeLogger Configurator](https://lubelogger.com/configure)
+> to generate your .env file
+
 ```
 LC_ALL=en_US.UTF-8 <- Locale and Language Settings, this will affect how numbers, currencies, and dates are formatted.
 LANG=en_US.UTF-8 <- Same as above. Note that some languages don't have UTF-8 encodings.
 MailConfig__EmailServer="" <- Email SMTP settings used only for configuring multiple users(to send their registration token and forgot password tokens)
 MailConfig__EmailFrom="" <- Same as above.
-MailConfig__UseSSL="false" <- Same as above.
 MailConfig__Port=587 <- Same as above.
 MailConfig__Username="" <- Same as above.
 MailConfig__Password="" <- Same as above.
@@ -27,5 +31,4 @@ LUBELOGGER_ALLOWED_FILE_EXTENSIONS="" - Allowed file extensions for document upl
 LUBELOGGER_LOGO_URL="" - Custom Logo URL.
 LUBELOGGER_MOTD="" - Message of The Day displayed in Login page if configured.
 LUBELOGGER_WEBHOOK="" - WebHook URL
-DEFAULT_REMINDER_EMAIL="" - Default email address to receive all reminder email alerts.
 ```

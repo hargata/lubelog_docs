@@ -4,7 +4,7 @@ For users that desire additional scalability for their backend, LubeLogger now s
 
 ## Configuration
 
-To configure LubeLogger to use PostgreSQL, you must first create a database with a schema named "app" in it, in the screenshot below we created a DB named "lubelogger" and then a schema named "app".
+To configure LubeLogger to use PostgreSQL, you must have at least one database for lubelogger to use. On LubeLogger versions newer than 1.3.5, the app schema will be automatically created, on previous versions you will need to manually create the schema.
 
 ![](/Advanced/Postgres/a/image-1726781278694.png)
 

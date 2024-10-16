@@ -11,6 +11,9 @@ If you're running LubeLogger on a Docker instance, first read [this article by M
 
 1. Convert the .PEM / .CRT files into .PFX, read [this StackOverflow post](https://stackoverflow.com/questions/808669/convert-a-cert-pem-certificate-to-a-pfx-certificate)
 2. Open and modify the .env file and add the following lines(note that in this example I used bob as the password for the cert)
+> [!NOTE]
+> You can use the [LubeLogger Configurator](https://lubelogger.com/configure)
+> for this step
 ```
 ASPNETCORE_Kestrel__Certificates__Default__Password=bob
 ASPNETCORE_Kestrel__Certificates__Default__Path=/https/<yourPFXCertificateName>.pfx
@@ -19,15 +22,23 @@ ASPNETCORE_URLS=https://+:443;http://+:80
 3. Open and modify docker-compose.yml. You will need to bind a new volume to the Docker container so that Kestrel can access the certificate file.
 ```
     volumes:
-      - ~/https/:/https:ro
+      - ./https/:/https:ro
 ```
-4. Run `docker-compose up -d` to start up the container and `https://localhost` will now have a valid cert.
+4. Check the port bindings to ensure that traffic is being forwarded to port 443
+```
+	ports:
+      - 443:443
+```
+5. Run `docker-compose up -d` to start up the container and `https://localhost` will now have a valid cert.
 
 ## Windows
 If you're running LubeLogger as the standalone Windows executable, first read [this article by Microsoft](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-8.0#configure-https-in-appsettingsjson)
 
 1. Convert the .PEM / .CRT files into .PFX, read [this StackOverflow post](https://stackoverflow.com/questions/808669/convert-a-cert-pem-certificate-to-a-pfx-certificate)
 2. Open and modify appsettings.json located in the same directory as the CarCareTracker executable and add the following lines(note that in this example I used bob as the password for the cert)
+> [!NOTE]
+> You can use the [LubeLogger Configurator](https://lubelogger.com/configure)
+> for this step
 ```
 "Kestrel": {
     "Endpoints": {

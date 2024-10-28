@@ -1,21 +1,30 @@
 # Roadmap
 
 ## 1.3.9
-Scheduled Release: TBD
+Scheduled Release: 11/01/2024
 
 ### Objectives
-- Fix AdjustedOdometer endpoint with decimal odometer multiplier
-- Move Delete Vehicle button into Edit Vehicle modal(Issue: #637)
-- Enter key to submit on Forms(Issue: #639)
-- Automatically create app schema in existing Postgres container
-- Remastered Admin Panel
-- Improve Code Maintainability
-- Add functionality to edit extra fields for multiple records(Issue: #483)
-- Fix bug with inverted bar chart colors with metric calculations(Issue: #649)
-- Add Attachment Exports for Notes
-- Add emphasis lines for API methods in documentation
-- Load sponsors in AJAX for users with slower internet connection
-- Fix bug with average/min/max fuel mileage labels
+- Bug Fixes
+  - Fix AdjustedOdometer endpoint with decimal odometer multiplier 
+  - Fix bug with inverted bar chart colors with metric calculations(Issue: #649)
+  - Fix bug with average/min/max fuel mileage labels
+  - Fix Page Titles
+- Features
+  - Enter key to submit on Forms(Issue: #639)
+  - Add functionality to edit extra fields for multiple records(Issue: #483)
+  - Add Attachment Exports for Notes
+  - Add emphasis lines for API methods in documentation
+  - Add support for smaller tabs in smaller screens
+  - Add thumbnail resizing(Issue: #616)
+  - Add Experimental GPS Integration(Issue: #511)
+  - Allow ExtraFields to be displayed in place of LicensePlate(Issue: #485)
+  - Add Built-In Translation Downloader and Editor
+- Misc Tech Debt and Changes
+  - Move Delete Vehicle button into Edit Vehicle modal(Issue: #637)
+  - Automatically create app schema in existing Postgres container
+  - Remastered Admin Panel
+  - Improve Code Maintainability(Split VehicleController out)
+  - Load sponsors asynchronously for users with slower internet connection
 
 ## 1.3.8
 Released 09/24/2024

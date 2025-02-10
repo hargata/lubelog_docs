@@ -20,21 +20,34 @@ Note that the names are automatically generated but exceptions can be applied, i
 
 ## Lifetime Sponsor
 
-Become a lifetime sponsor by making a one-time $500 donation to LubeLogger, a display name of your choice will be displayed in the Lifetime Sponsors section in the About page. Please contact us via email for payment and display name details.
+Become a lifetime sponsor by making a one-time $500 donation to LubeLogger, a display name of your choice will be displayed in the Lifetime Sponsors section in the About page. Please [contact us via email](mailto:hargatasoftworks@gmail.com) for payment and display name details.
 
-[Contact Us](mailto:hargatasoftworks@gmail.com)
+### Alternative forms of donation
 
-## Donating via Stripe
+If you wish to become a lifetime sponsor without making a monetary donation and you live in one of the following states: Utah, Colorado, Arizona, Idaho, New Mexico, or Nevada. We will also accept the following donations:
+
+- 2000 or newer Suzuki GSX-R (250cc and above)
+- 2000 or newer Kawasaki Ninja (250cc and above)
+- 2000 or newer Honda CBR(300cc and above)
+- 2000 or newer Yamaha R-series(300cc and above)
+- 1990 or newer Jeep Comanche
+- 1990 or newer Nissan D-21
+
+All vehicles must run and drive and have a clean or Rebuilt/Restored title. If you live in the above states, we have a truck and trailer that will come pick it up.
+
+Please [contact us via email](mailto:hargatasoftworks@gmail.com) to set something up.
+
+## Anonymous Donation via Stripe
 
 [Donate via Stripe](https://buy.stripe.com/aEU9Egc8DdMc9bO144)
 
 Donating via Stripe allows you to fund specific features using the "Issue #" Field, but your name won't be displayed under the sponsors section. This method is ideal if you wish to maintain anonymity.
 
-![](/Funding/a/image-1716312692019.29.52_AM.png)
-
 The "Issue #" corresponds to the ticket number of the GitHub Issue
 
-![](/Funding/a/image-1716313449179.42.40_AM.png)
+![](/Misc/Funding/a/image-1738595724006.png)
+
+![](/Misc/Funding/a/image-1738595808828.png)
 
 Funding specific issues help us prioritize which issue to focus our development effort on.
 

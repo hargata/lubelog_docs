@@ -1,6 +1,6 @@
 # Frequently Requested Feature Requests
 
-This page contains a list of frequently requested feature requests for features that already exist in LubeLogger. If you create a feature request for a feature that already exists in this list your ticket will be closed with a comment that links to this page with no further explanation.
+This page contains a list of frequently requested feature requests for features that already exist in LubeLogger or will **never** be implemented in LubeLogger. If you create a feature request for a feature that already exists in this list your ticket will be closed with a comment that links to this page with no further explanation.
 
 >| ### Change Wording on Buttons
 >|
@@ -22,3 +22,7 @@ This page contains a list of frequently requested feature requests for features 
 >| ### Add Support for Foreign Locale
 >|
 >| LubeLogger supports whichever locale is installed onto your system, please see [[Docker Installation|Installation/Getting%20Started#docker]] and [[Troubleshooting Locale Issues|Installation/Troubleshooting#locale-issues]]
+
+>| ### Data Interpolation For Missed/Partial Fuel Ups
+>| 
+>| The aggregates and calculations in LubeLogger are only as good as the data you put in. The app will not and should not make any assumptions about the distance you have traveled or any missed fuel ups in between records. If your record keeping is imperfect, you cannot expect perfect data aggregates.

@@ -16,4 +16,3 @@ LUBELOGGER_LOGO_URL:<URL to your Logo>
 
 ## Non-replaceable Locations
 - Logo in the About section in the Settings tab
-- Logo that shows up in the top left of the Vehicle Maintenance History Report

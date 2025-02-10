@@ -103,6 +103,8 @@ This problem is specific to the Windows Standalone Executable, the problem stems
 }
 ```
 
+Verify that your JSON is still valid, make sure to add `,` appropriately, or you will get an error.
+
 Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
 
 ### NGINX / Cloudflare 
@@ -135,3 +137,7 @@ server
     }
 }
 ```
+
+#### Troubleshooting Issues with Reverse Proxies
+
+No support will be rendered by the maintainers for issues relating to reverse proxies because we are not going to spin up an instance of a reverse proxy with similar or identical configuration to yours just to figure out what's wrong. Any issues submitted on GitHub related to reverse proxies will be assigned an `unsupported` label, the issue will remain open for 15 days for others to chime in, and then it will be closed regardless of whether the issue is resolved or not.

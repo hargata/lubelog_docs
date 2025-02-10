@@ -31,4 +31,7 @@ LUBELOGGER_ALLOWED_FILE_EXTENSIONS="" - Allowed file extensions for document upl
 LUBELOGGER_LOGO_URL="" - Custom Logo URL.
 LUBELOGGER_MOTD="" - Message of The Day displayed in Login page if configured.
 LUBELOGGER_WEBHOOK="" - WebHook URL
+LUBELOGGER_CUSTOM_WIDGETS=true/false(default: false) - Allow Custom Widgets to be configured
+LUBELOGGER_INVARIANT_API=true/false(default: false) - whether API response should be invariant
+LUBELOGGER_OPEN_REGISTRATION=true/false(default: false) - Allow users to generate their own registration token
 ```

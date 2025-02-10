@@ -1,7 +1,110 @@
 # Roadmap
 
+## 1.4.5
+Scheduled Release: TBD
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with incorrect MPG labels from tagged partial fuel ups(Issue: #848)
+- Features
+  - Add API Endpoints for Plans(Issue: #840)
+  - Add functionality to re-order table columns(Issue: #780)
+  - Dynamically generate locale-sensitive CSV import samples
+
+## 1.4.4
+Released: 02/03/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with duplicating shop supplies to vehicle
+  - Fixed bug with replenishing supplies
+  - Fixed bug with sorting and filtering
+  - Fixed bug with Odometer and Reminder count label
+  - Fixed bug with Cost Per Distance traveled(Issue: #825)
+  - Fixed bug with Cost Per Day metric when Year is selected(Issue: #824)
+- Features
+  - Add Basic Auth to the Reminders Calendar Endpoint(Issue: #697)
+  - Add functionality to print records(Issue: #801, #800)
+  - Add functionality to enable Open Registration(Issue: #805)
+  - Add Days interval to Recurring Reminder and Tax Records(Issue: #755)
+  - Made parameters optional for Send Reminder API endpoint(defaults to all urgencies)
+  - Add Attachments Column(Issue: #823)
+
+## 1.4.3
+Released 01/10/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with fuel mileage for empty odometers(Issue: #796)
+- Features
+  - Added new endpoint to retrieve Reminders Calendar in ICS format(Issue: #697)
+  - Added new endpoint to upload documents and attach documents to records(Issue: #769)
+- Misc. Tech Debt
+  - Moved user uploaded files out from `wwwroot` to `data` folder(Issue: #785, #260)
+  - Moved userConfig.json out from `config` to `data/config`
+
+## 1.4.2
+Released 01/02/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with creating past records for recurring tax records(Issue: #745)
+  - Security Fixes
+  - Fixed bug where tags are returned as null in API(Issue: #763)
+  - Fixed bug on MacOS devices with context menu
+- Features
+  - Add PUT/DELETE API requests to modify records(Issue: #541)
+  - Allow API requests in JSON format.
+  - Add Total Distance Traveled label in Gas Records(Issue: #751)
+  - Add setting to default to Fuel Unit Cost input(Issue: #744)
+  - Reformatted Webhook payloads(Issue: #574)
+  - Allow users to filter records by tags on the consolidated report(Issue: #572)
+  - Allow users to filter records by date range on consolidated report(Issues: #761, #689)
+  - Allow users to insert odometer records from existing records(Issue: #758)
+  - Improved tile sizes in garage on mobile devices
+
+## 1.4.1
+Released: 11/25/2024
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with drag and drop for plan items 
+  - Fixed bug where plan type does not display correctly in Kiosk mode
+  - Fixed bug with sorting in tables.
+  - Fixed aggregate label bug when search returns empty results
+  - Fixed bug with changes in appsettings.json(Issue: #739)
+- Features
+  - Cached Report Metrics are now vehicle specific
+  - Added option to toggle between 2 and 3 decimal places for fuel consumption(Issue: #723)
+  - Deleting records will now replenish requisitioned supplies(Issue: #429)
+  - Users can now add supplies to existing records(Issue: #454)
+  - Add cost table for multi-year trends(Issue: #716)
+  - Sort notes in ascending order by description(Issue: #523)
+  - Added Select Mode
+  - Remastered the Context Menu
+  - Remastered Reminder Record tab.
+  - Added SimplyAuto column mapping for imports(Issue: #60)
+- Misc. Tech Debt
+  - Additional Code Cleanup(PR: #721, #722) with ideas from [Scorpoon](https://github.com/Scorpoon) 
+
+## 1.4.0
+Released: 11/14/2024
+
+### Objectives
+- Bug Fixes
+  - Fix Translation Editor Bug(Issue: #681)
+- Features
+  - Add Custom Dashboard functionality(Issue: #660, #678)
+  - Add Kiosk View for Vehicles, Reminders, and Planners
+  - Add functionality to duplicate records across vehicles(Issue: #526)
+  - Add Tags to POST API methods(Issue: #684)
+  - Add functionality to automatically format decimal inputs(Issue: #611)
+  - Allow Custom Logos and Extra Fields in Vehicle Maintenace Report(Issue: #702)
+- Misc Tech Debt
+  - [Code Cleanup](https://github.com/hargata/lubelog/pull/704) by [Scorpoon](https://github.com/Scorpoon)
+
 ## 1.3.9
-Scheduled Release: 11/01/2024
+Released: 10/31/2024
 
 ### Objectives
 - Bug Fixes
@@ -9,6 +112,8 @@ Scheduled Release: 11/01/2024
   - Fix bug with inverted bar chart colors with metric calculations(Issue: #649)
   - Fix bug with average/min/max fuel mileage labels
   - Fix Page Titles
+  - Fix misaligned columns when viewed on small screens
+  - Fix mobile nav closing on iOS devices when scrolling
 - Features
   - Enter key to submit on Forms(Issue: #639)
   - Add functionality to edit extra fields for multiple records(Issue: #483)
@@ -19,6 +124,8 @@ Scheduled Release: 11/01/2024
   - Add Experimental GPS Integration(Issue: #511)
   - Allow ExtraFields to be displayed in place of LicensePlate(Issue: #485)
   - Add Built-In Translation Downloader and Editor
+  - Add functionality to re-order tabs(Issue: #518)
+  - Add funtionality to reveal password on password fields
 - Misc Tech Debt and Changes
   - Move Delete Vehicle button into Edit Vehicle modal(Issue: #637)
   - Automatically create app schema in existing Postgres container

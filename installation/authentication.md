@@ -13,19 +13,25 @@ Once you have entered the credentials, click the "Setup" button and you will be 
 LubeLogger relies on an invitation-only model for creating/registering new users. It is highly recommended that LubeLogger is configured with SMTP in order to make the user registration process as smooth as possible, see [[Getting Started|Installation/Getting Started]] for more information regarding SMTP configuration.
 
 To Create/Invite New Users, you first need to enable authentication and set up the Root User credentials. Once that is done, upon login, you will see that there is now a dropdown to the right of the "Settings" tab that has your root username on it. Click on that dropdown and select "Admin Panel"
+
 ![](/Installation/Authentication/a/image-1726779846750.png)
 
 You will now be taken to a new page. There are two sections in this page, Tokens and Users. 
-![](/Installation/Authentication/a/image-1726779853802.png)
+
+![](/Installation/Authentication/a/image-1731770062313.png)
 
 Tokens are used for invitees to register their user account or existing users to reset their password. These tokens are single use and are validated against the email address they are issued for.
 
 Users, as the name suggests, is a list of users in the system. You can also mark or unmark existing users as Admins here, see below to understand what permissions Admin users have.
 
-To invite a user, simply click on the "Generate User Token" button and type in their email address, note that this is case-sensitive. 
-![](/Installation/Authentication/a/image-1726779859968.png)
+To invite a user, simply click "Manage Tokens" button, then "Generate" and type in their email address, note that this is case-sensitive.
+
+![](/Installation/Authentication/a/image-1731770126741.png)
+
+You can also generate tokens for multiple email addresses in the field by separating the email addresses with a `,`
 
 If SMTP is configured and the Auto Notify(via Email) switch is checked, the user will receive an email that looks like this:
+
 ![](/Installation/Authentication/a/image-1726779865910.png)
 
 ## Root/Super User

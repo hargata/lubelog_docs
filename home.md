@@ -5,6 +5,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 ### Installation Instructions:
 - [[Getting Started|Installation/Getting Started]]
 - [[Authentication|Installation/Authentication]]
+- [[Upgrading|Installation/Upgrade]]
 - [[Troubleshooting|Installation/Troubleshooting]]
 
 ### Vehicle Management:
@@ -25,6 +26,8 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 ### Advanced:
 - [[API|Advanced/API]]
 - [[Webhook|Advanced/Webhook]]
+- [[Kiosk|Advanced/Kiosk]]
+- [[Custom Widgets|Advanced/Custom Widgets]]
 - [[Authentication via OIDC|Advanced/OpenID]]
 - [[Manage Additional Fields|Advanced/Additional Fields]]
 - [[Setting up HTTPS|Advanced/HTTPS]]
@@ -40,4 +43,5 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [[Funding|Misc/Funding]]
 - [[LubeLogger Builder|Misc/LubeLogger Builder]]
 - [[Manifesto/Developer's Motivation|Misc/Motivation]]
+- [[Branding|Misc/Branding]]
 - [[Annual Hiatus|Misc/Annual Hiatus]]

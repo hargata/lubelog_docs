@@ -93,5 +93,15 @@ chmod 777 ./CarCareTracker
 ./CarCareTracker
 ```
 
+Depending on your Linux distro, locale may or may not be passed in automatically by the OS, if you receive an Invariant Locale warning, run these commands instead:
+
+```
+chmod 777 ./CarCareTracker
+LANG=en_US
+./CarCareTracker
+```
+
+**Note:** `chmod 777` above is only used to rule out permission quirks/issues, please restrict the permissions to the lowest acceptable level once you have verified that LubeLogger can be executed on your machine.
+
 ## Test that It Works
 Whichever path you choose, once you get the app up and running, just navigate to the IP address and port the server is listening to and you should be able to see the app

@@ -21,6 +21,15 @@ On the occassions that you cannot fill your vehicle up to full, you can defer th
 
 ![](/Records/Fuel%20Records/a/image-1726780463015.png)
 
+#### Note for Electric Vehicles(EV)
+LubeLogger does not support calculating consumption by charge percentages because the State of Charge(SoC) readout is inherently inaccurate based on multiple variables - such as nominal battery capacity, battery degradation, temperature, and margins of errors and buffers built into your Battery Management System(BMS).
+
+We can only rely upon the base units that are truly measurable such as kWh consumed. 
+
+If you always charge to the same SoC(e.g.: 80%), then every charge to 80% should always be considered a full charge, every charge less than 80% would be considered a partial charge. In this scenario, your consumption would be the amount of kWh consumed to bring your battery SoC back up to 80% every charge. Ideally you shouldn't ever charge above 80%, but if you do sometimes charge to 100%, then you need to determine if any charges less than 100% should be considered a partial charge at your discretion.
+
+If you frequently charge to random percentages just to have enough range for your trip, you cannot rely on the kWh readout on the charger(e.g.: you start at 60%, traveled some distance, then charged to 50% so you can complete your trip). In this case, the only reliable metric you have for your consumption is the kWh consumed during the trip(not available in all EVs) and you should record this fuel record before charging instead of after.
+
 ### Missed Fuel Ups
 Check this if you have missed a fuel up record prior to adding this fuel record. This effectively resets the fuel mileage calculation and will show up as $0 or "---" in the fuel records. Checking this ensures that the average fuel mileage calculation isn't skewed due to missed fuel ups.
 
@@ -54,14 +63,17 @@ The units can only toggle between l/100km and km/l, which means that this unit c
 ## Importing from CSV/Fuelly/SpiritMonitor.de
 LubeLogger supports importing CSV exports from other apps, below lists the column names that are acceptable/mapped to our data points:
 
-| LubeLogger Data Field                  | Imported CSV                                                   |
-| -------------------------------------- | -------------------------------------------------------------- |
-| date                                   | date, fuelup_date                                              |
-| odometer                               | odometer                                                       |
-| fuelconsumed                           | gallons, liters, litres, consumption, quantity,   fuelconsumed |
-| cost                                   | cost, total cost, totalcost,  total price                      |
-| notes                                  | notes, note                                                    |
-| partialfuelup(inverse of isfilltofull) | partial_fuelup                                                 |
-| isfilltofull                           | isfilltofull, filled up                                        |
-| missedfuelup                           | missedfuelup, missed_fuelup                                    |
-| tags                                   |        tags                                                    |
+| LubeLogger Data Field                  | Imported CSV                                                   		|
+| -------------------------------------- | ---------------------------------------------------------------------|
+| date                                   | date, fuelup_date, or columns for day, month, and year    			|
+| odometer                               | odometer, odo                                                    	|
+| fuelconsumed                           | gallons, liters, litres, consumption, quantity, qty, fuelconsumed 	|
+| cost                                   | cost, total cost, totalcost,  total price                      		|
+| notes                                  | notes, note                                                    		|
+| partialfuelup(inverse of isfilltofull) | partial_fuelup, partial tank, partial_fill                     		|
+| isfilltofull                           | isfilltofull, filled up                                        		|
+| missedfuelup                           | missedfuelup, missed_fuelup, missed fill up, missed_fill       		|
+| tags                                   |        tags                                                    		|
+
+### Importing from SimplyAuto
+SimplyAuto exports all of its records in a consolidated CSV file, it is up to the user to separate out Fuel Records from Service Records, etc before importing the file.

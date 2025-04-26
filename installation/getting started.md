@@ -10,6 +10,15 @@ You will then clone the following files onto your computer from the repository
 
 Create a file named `.env` in the same folder as the docker compose file and use the [LubeLogger Configurator](https://lubelogger.com/configure) to generate the contents for it.
 
+Note that the environment variables `LANG` and `LC_ALL` file is what will configure locale(currency, decimal, and date formats) that LubeLogger will use. Without these environment variables LubeLogger will default to 
+
+```
+InvariantCulture
+Currency: ¤ 0.00
+Date: MM/dd/yyyy
+Decimal: 0.00
+````
+
 See [[Environment Variables|Advanced/Environment Variables]] for additional configuration
 
 Once you're happy with the configuration, run the following commands to pull down the image and run container.
@@ -81,6 +90,34 @@ You just have to add the MailConfig section into it, but I provided the full app
 ```
 When using this approach, the default port the app will be listening on is 5000, so you will navigate to localhost:5000
 
+### Run Executable in Background
+
+The following steps describes how to run LubeLogger as a pseudo-service that is started whenever Windows is booted up.
+
+Note that LubeLogger cannot run as a true Windows Service as that will break cross-platform compatibility; however, it can run in the background with similar behaviors to a Windows Service.
+
+1. Launch `Task Scheduler` - should come with every copy of Windows
+2. Create a Task, note `Hidden` and `Run whether user is logged on or not` in `General` tab
+
+![](/Installation/Getting%20Started/a/image-1744758727023.png)
+
+3. In `Triggers` tab, create a new trigger for `At startup`
+
+![](/Installation/Getting%20Started/a/image-1744758748520.png)
+
+4. In `Actions` tab, create an action to launch `path\to\lubelogger\CarCareTracker.exe` and set the `Start in` to the folder the executable is in i.e.: `path\to\lubelogger`
+
+![](/Installation/Getting%20Started/a/image-1744758763587.png)
+
+5. Click `Ok` to create the task, then right click on the task and click `Run`
+6. LubeLogger should now run in the background
+
+![](/Installation/Getting%20Started/a/image-1744758777847.png)
+
+![](/Installation/Getting%20Started/a/image-1744758809425.png)
+
+7. To stop LubeLogger, right click on the Task and select `End`
+
 ## Linux Baremetal
 Linux executables are provided and can be found under assets for the [latest release](https://github.com/hargata/lubelog/releases/latest)
 
@@ -101,7 +138,7 @@ LANG=en_US
 ./CarCareTracker
 ```
 
-**Note:** `chmod 777` above is only used to rule out permission quirks/issues, please restrict the permissions to the lowest acceptable level once you have verified that LubeLogger can be executed on your machine.
+**Note:** `chmod 777` above is only used to rule out permission quirks/issues, please restrict the permissions to the lowest acceptable level once you have verified that LubeLogger can be executed on your machine. `LANG=en_US` is an example to configure LubeLogger to use English(United States) as a locale.
 
 ## Test that It Works
 Whichever path you choose, once you get the app up and running, just navigate to the IP address and port the server is listening to and you should be able to see the app

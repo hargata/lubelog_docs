@@ -19,7 +19,7 @@ This page contains a list of frequently requested feature requests for features 
 >|
 >| This is user-configurable, see [[Alternate Fuel Units|Records/Fuel%20Records#alternate-fuel-units]]
 
->| ### Add Support for Foreign Locale
+>| ### Add Support for Foreign Locale(Different Currencies/Decimals/Date Formats)
 >|
 >| LubeLogger supports whichever locale is installed onto your system, please see [[Docker Installation|Installation/Getting%20Started#docker]] and [[Troubleshooting Locale Issues|Installation/Troubleshooting#locale-issues]]
 

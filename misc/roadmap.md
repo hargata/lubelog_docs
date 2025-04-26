@@ -1,7 +1,34 @@
 # Roadmap
 
-## 1.4.5
+## 1.4.7
 Scheduled Release: TBD
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with Extra Field Types not working for Fuel Records(Issue: #931)
+- Features
+  - Add `userinfo` endpoint parameter for OpenIDConfig to future-proof claims retrieval
+  - Hardened API to accept null for list object types in payload(prevents Issue: #918)
+  - Add tooltip for attachment file names(Issue: #926)
+
+## 1.4.6
+Released: 04/02/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with incorrect average MPG label when toggling consumption units(Issue: #889)
+  - Fixed bug with vehicle sold and purchase date not returning in locale-invariant format(Issue: #895)
+- Features
+  - Add functionality for root users to review server settings and test SMTP config(Issue: #884)
+  - Add reminder urgency and due metrics for reminder selection when creating new records(Issue: #893)
+  - Add toggle for users to hide Calendar tab(Issue: #879)
+  - Add extra field types(Issue: #612)
+  - Reworded OIDC error message if auth response does not contain email claim(PR: #901)
+  - OIDC scope now defaults to `openid email` if not provided(PR: #903)
+  - Added Remote Auth Debug endpoint for advanced OIDC Troubleshooting(PR: #905)
+
+## 1.4.5
+Released: 03/06/2025
 
 ### Objectives
 - Bug Fixes
@@ -10,6 +37,9 @@ Scheduled Release: TBD
   - Add API Endpoints for Plans(Issue: #840)
   - Add functionality to re-order table columns(Issue: #780)
   - Dynamically generate locale-sensitive CSV import samples
+  - Add check to print individual records when generating vehicle history report(Issue: #857)
+  - Add markdown rendering to Kiosk notes(Issue: #856)
+  - Minor Quality of Life Improvements(PR: #866)
 
 ## 1.4.4
 Released: 02/03/2025

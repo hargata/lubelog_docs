@@ -69,6 +69,10 @@ Common issues and steps you can take to fix them.
 >| 
 >| Add `openid` to the OpenIDConfig__Scope environment variable
 
+>| ### Issues with OpenID Provider
+>| 
+>| If none of the above troubleshooting steps worked, the problem might exist on the OpenID Provider side of things, LubeLogger has a built-in OpenID debugger which can be used to identify what key information might be missing from the OpenID Provider's Authorization Response. See [[Advanced Troubleshooting|Advanced/OpenID#advanced-troubleshooting]] for more information.
+
 ## Server Issues
 
 >| ### ERR_TOO_MANY_REDIRECTS

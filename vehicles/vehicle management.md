@@ -9,6 +9,15 @@ Once you're done, click "Add New Vehicle" and the vehicle will now be visible in
 
 ![](/Vehicles/Vehicle%20Management/a/image-1726782176398.png)
 
+### Vehicles and Equipment without a License Plate
+LubeLogger can also be used to track other vehicles/equipment that aren't necessarily road-legal such as forklifts/golf carts/lawn mowers/etc. Since these vehicles do not have license plates and LubeLogger uses the License Plate field as an identifier by default, you may add an Extra Field at the Vehicle level so that the vehicle/equipment can still have an identifier. You must be logged on as the root user in order to set up Extra Fields. You can then set the extra field as the Vehicle Identifier, and the License Plate field will become optional.
+
+![](/Vehicles/Vehicle%20Management/a/image-1744818005541.png)
+
+![](/Vehicles/Vehicle%20Management/a/image-1744818147716.png)
+
+![](/Vehicles/Vehicle%20Management/a/image-1744818369771.png)
+
 ### Purchase and Sold Information
 These optional fields are used to calculate duration of ownership as well as any depreciation or appreciation costs. For length of ownership, you must provide a Purchase Date, if Sold Date was not provided, LubeLogger will calculate the amount of days between the current day and the Purchase Date as length of ownership. If both Purchase and Sold Costs are provided, LubeLogger will calculate any depreciation / appreciation costs as well as the cost per mile and cost per day. These data will show up in the Vehicle Maintenance History Report under its own section.
 

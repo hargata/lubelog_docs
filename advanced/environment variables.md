@@ -24,6 +24,8 @@ OpenIDConfig__RedirectURL=https://<yourlubeloggerdomain.com>/Login/RemoteAuth(mu
 OpenIDConfig__Scope=The scope for retrieving the user's email claim(usually it's just 'email')
 OpenIDConfig__ValidateState=true/false(default: false) - whether LubeLogger should validate state.
 OpenIDConfig__UsePKCE=true/false(default: false) - whether LubeLogger should use PKCE
+OpenIDConfig__DisableRegularLogin=true/false(default: false) - auto re-direct user to OIDC login.
+OpenIDConfig__LogOutURL=Log Out URL for OIDC Provider, required if DisableRegularLogin=true.
 EnableAuth=true/false(default: false) - Allows users to configure whether if authentication is enabled via environment variable.
 UserNameHash="" - SHA256 Hash of the root username.
 UserPasswordHash="" - SHA256 Hash of the root password.

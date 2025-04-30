@@ -104,10 +104,66 @@ This problem is specific to the Windows Standalone Executable, the problem stems
       "Https": {
         "Url": "https://10.0.0.4:5011"
       },
+    }
 }
 ```
 
 Verify that your JSON is still valid, make sure to add `,` appropriately, or you will get an error.
+
+Full Example of appsettings.json with the Kestrel portion added:
+
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "UseDarkMode": false,
+  "UseSystemColorMode": false,
+  "EnableCsvImports": true,
+  "UseMPG": true,
+  "UseDescending": false,
+  "EnableAuth": false,
+  "DisableRegistration": false,
+  "EnableRootUserOIDC": false,
+  "HideZero": false,
+  "AutomaticDecimalFormat": false,
+  "EnableAutoReminderRefresh": false,
+  "EnableAutoOdometerInsert": false,
+  "EnableShopSupplies": false,
+  "ShowCalendar":  true,
+  "EnableExtraFieldColumns": false,
+  "UseUKMPG": false,
+  "UseThreeDecimalGasCost": true,
+  "UseThreeDecimalGasConsumption": true,
+  "UseMarkDownOnSavedNotes": false,
+  "HideSoldVehicles": false,
+  "PreferredGasMileageUnit": "",
+  "UserColumnPreferences": [],
+  "UseUnitForFuelCost": false,
+  "PreferredGasUnit": "",
+  "UserLanguage": "en_US",
+  "VisibleTabs": [ 0, 1, 4, 2, 3, 6, 5, 8 ],
+  "TabOrder": [ 8, 9, 10, 0, 1, 4, 2, 7, 3, 6, 5 ],
+  "DefaultTab": 8,
+  "UserNameHash": "",
+  "UserPasswordHash": "",
+  "DefaultReminderEmail": "",
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://10.0.0.4:5000"
+      },
+      "Https": {
+        "Url": "https://10.0.0.4:5011"
+      },
+     }
+  }
+}
+```
 
 Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
 

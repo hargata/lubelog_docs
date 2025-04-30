@@ -1,15 +1,17 @@
 # Roadmap
 
 ## 1.4.7
-Scheduled Release: TBD
+Released 04/29/2025
 
 ### Objectives
 - Bug Fixes
   - Fixed bug with Extra Field Types not working for Fuel Records(Issue: #931)
 - Features
-  - Add `userinfo` endpoint parameter for OpenIDConfig to future-proof claims retrieval
+  - Add `userinfo` endpoint parameter for OpenIDConfig to future-proof claims retrieval(PR: #916)
   - Hardened API to accept null for list object types in payload(prevents Issue: #918)
   - Add tooltip for attachment file names(Issue: #926)
+  - Add POST/PUT/DELETE API endpoints for Reminders(Issue: #877)
+  - Add clickable links in Registration and Reset Password emails
 
 ## 1.4.6
 Released: 04/02/2025

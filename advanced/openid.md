@@ -13,6 +13,7 @@ OpenIDConfig__Scope=Scope to request from Provider(default: openid email)
 OpenIDConfig__ValidateState=true/false(default: false) - whether LubeLogger should validate state.
 OpenIDConfig__UsePKCE=true/false(default: false) - whether LubeLogger should use PKCE
 OpenIDConfig__DisableRegularLogin=true/false(default: false) - auto re-direct user to OIDC login.
+OpenIDConfig__UserInfoURL=UserInfo URL as alternative option to retrieve user claims(required for certain OpenID Providers)
 OpenIDConfig__LogOutURL=Log Out URL for OIDC Provider, required if DisableRegularLogin=true.
 ```
 
@@ -30,6 +31,7 @@ If you're using the Windows Standalone executable, add the following section int
     "ValidateState": true/false,
     "UsePKCE": true/false,
     "DisableRegularLogin": true/false,
+    "UserInfoURL": "",
     "LogOutURL": ""
   }
  ```
@@ -46,6 +48,7 @@ OpenIDConfig__RedirectURL=https://localhost:5011/Login/RemoteAuth
 OpenIDConfig__Scope=email
 OpenIDConfig__ValidateState=true
 OpenIDConfig__UsePKCE=false
+OpenIDConfig__UserInfoURL=https://openidconnect.googleapis.com/v1/userinfo
 OpenIDConfig__DisableRegularLogin=false
 ```
 
@@ -96,7 +99,9 @@ Failed Claim Validation(no email returned from OpenID Provider):
 
 There are [breaking changes](https://www.authelia.com/integration/openid-connect/openid-connect-1.0-claims/#restore-functionality-prior-to-claims-parameter) for users using Authelia with version >= 4.39
 
-This is because LubeLogger utilizes the legacy method of retrieving the email claim via the id_token, which Authelia has deprecated as of v4.39, a workaround is outlined in the article linked above until we're able to future-proof the OpenID auth flow used by LubeLogger:
+This is because LubeLogger utilizes the legacy method of retrieving the email claim via the id_token, which Authelia has deprecated as of v4.39.
+
+If you're using LubeLogger <= v1.4.6, use the workaround below, otherwise, you can inject your Authelia's userinfo endpoint into the UserInfoURL environment variable, note that `userinfo_signed_response_alg` must be `none` in order for LubeLogger to integrate properly with Authelia
 
 Authelia config in identity_providers:
 

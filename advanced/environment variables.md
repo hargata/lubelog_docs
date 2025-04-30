@@ -25,6 +25,7 @@ OpenIDConfig__Scope=The scope for retrieving the user's email claim(usually it's
 OpenIDConfig__ValidateState=true/false(default: false) - whether LubeLogger should validate state.
 OpenIDConfig__UsePKCE=true/false(default: false) - whether LubeLogger should use PKCE
 OpenIDConfig__DisableRegularLogin=true/false(default: false) - auto re-direct user to OIDC login.
+OpenIDConfig__UserInfoURL=UserInfo URL as alternative option to retrieve user claims(required for certain OpenID Providers)
 OpenIDConfig__LogOutURL=Log Out URL for OIDC Provider, required if DisableRegularLogin=true.
 EnableAuth=true/false(default: false) - Allows users to configure whether if authentication is enabled via environment variable.
 UserNameHash="" - SHA256 Hash of the root username.
@@ -36,4 +37,5 @@ LUBELOGGER_WEBHOOK="" - WebHook URL
 LUBELOGGER_CUSTOM_WIDGETS=true/false(default: false) - Allow Custom Widgets to be configured
 LUBELOGGER_INVARIANT_API=true/false(default: false) - whether API response should be invariant
 LUBELOGGER_OPEN_REGISTRATION=true/false(default: false) - Allow users to generate their own registration token
+LUBELOGGER_DOMAIN="" - URL to Instance of LubeLogger used to generate email links
 ```

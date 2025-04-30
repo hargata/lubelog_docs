@@ -34,6 +34,22 @@ If SMTP is configured and the Auto Notify(via Email) switch is checked, the user
 
 ![](/Installation/Authentication/a/image-1726779865910.png)
 
+### New User Registration
+
+The user who received the email will then click on the "Register" link on the login page.
+
+![](/Installation/Authentication/a/image-1745760612827.png)
+
+This will take them to the New User Registration page which will require them to input the token they received along with the email address associated with the token
+
+![](/Installation/Authentication/a/image-1745760663954.png)
+
+Once all the fields are filled out, click "Register" and their user will be created.
+
+If the Register link is not visible on the login page, it is because the setting "Disable Registration" was checked
+
+![](/Installation/Authentication/a/image-1745760751069.png)
+
 ## Root/Super User
 You might be tempted to use your root credentials as your main credentials, and there is nothing wrong that, but you should know that there are a few caveats associated with the root user.
 1. Root/Super Users can view and edit all vehicles, this might seem like a great advantage initially, but it can be problematic if there are sufficient users and you have to sift through dozens of vehicles to get to yours.

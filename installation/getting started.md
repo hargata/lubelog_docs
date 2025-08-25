@@ -8,6 +8,8 @@ You need to have Docker installed and Virtualization enabled(typically a BIOS se
 You will then clone the following files onto your computer from the repository 
 - docker-compose.yml(docker-compose-traefik.yml if using Traefik)
 
+Note for Portainer: some users might run into an issue with `build: .` in the docker-compose file, this line can be safely removed if it's causing issues.
+
 Create a file named `.env` in the same folder as the docker compose file and use the [LubeLogger Configurator](https://lubelogger.com/configure) to generate the contents for it.
 
 Note that the environment variables `LANG` and `LC_ALL` file is what will configure locale(currency, decimal, and date formats) that LubeLogger will use. Without these environment variables LubeLogger will default to 

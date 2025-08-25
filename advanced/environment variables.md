@@ -32,6 +32,7 @@ UserNameHash="" - SHA256 Hash of the root username.
 UserPasswordHash="" - SHA256 Hash of the root password.
 LUBELOGGER_ALLOWED_FILE_EXTENSIONS="" - Allowed file extensions for document uploads, use '*' to allow all file types.
 LUBELOGGER_LOGO_URL="" - Custom Logo URL.
+LUBELOGGER_LOGO_SMALL_URL="" - Custom Small Logo URL.
 LUBELOGGER_MOTD="" - Message of The Day displayed in Login page if configured.
 LUBELOGGER_WEBHOOK="" - WebHook URL
 LUBELOGGER_CUSTOM_WIDGETS=true/false(default: false) - Allow Custom Widgets to be configured

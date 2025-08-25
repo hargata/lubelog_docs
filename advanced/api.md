@@ -38,6 +38,29 @@ No values are needed, the presence of the key is sufficient for LubeLogger to fo
 
 ![](/Advanced/API/a/image-1735660354711.png)
 
+## GET Parameters
+As of 1.4.8, you can now pass in additional parameters to filter down results from the following GET API endpoints:
+
+- Plan
+- Odometer
+- Service Record
+- Repair
+- Upgrade
+- Fuel
+- Tax
+
+The parameters that you can pass in are:
+
+```
+Id: Id of the record
+StartDate: Find records after this date (not inclusive)
+EndDate: Find records before this date (not inclusive)
+Tags: Find records that contains these tags(separated by white space, not applicable to Plans)
+```
+
+![](/Advanced/API/a/image-1755538298273.png)
+
+
 ## Testing
 You can utilize any REST API testing tool to test your use-case.
 

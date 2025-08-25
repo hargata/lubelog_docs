@@ -1,5 +1,47 @@
 # Roadmap
 
+## 1.5.0
+Released 08/21/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with UK MPG conversion applied on EV's(Issue: #1012)
+  - Fixed bug with columns disappearing if Enable CSV Import is disabled(Issue: #1005)
+- Features
+  - Add option to upload a Vehicle Map(Issue: #38)
+  - Allow users to select locale different from their system(Issue: #929)
+  - Add urgencies param to Reminder GET API(PR: #1026)
+- Misc. Tech Debt
+  - Updated Npgsql and CsvHelper
+  - Migrated from System.IdentityModel.Tokens.Jwt to Microsoft.IdentityModel.JsonWebTokens
+
+## 1.4.9
+Released 07/09/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug where non-root users cannot access vehicles(PR: #998)
+
+## 1.4.8
+Released 07/02/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug where tag is cleared off after editing a record(Issue: #945)
+- Features
+  - Update layout
+  - Add option to display vehicle image on nav(PR: #950) by [iamdabe](https://github.com/iamdabe)
+  - Add UserMetric attribute in Reminder GET methods(Issue: #964)
+  - Add Extra Fields for Notes(Issue: #957)
+  - Add Parameters for API GET Methods
+  - Add Case Insensitive Global Search
+  - Updated Document Uploader to also allow link attachments.
+  - Add Server Settings Configurator
+  - Hides irrelevant Metrics in Report Dropdown(Issue: #867)
+  - Add Due Days and Due Distance columns to Reminders
+- Misc. Tech Debt
+  - Fixed label target in Notes(PR: #949) by [iamdabe](https://github.com/iamdabe)
+
 ## 1.4.7
 Released 04/29/2025
 

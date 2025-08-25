@@ -5,7 +5,11 @@ LubeLogger does not require authentication by default; however, it is highly rec
 ## Enabling Authentication
 To enable authentication, all you have to do is navigate to the "Settings" tab and check "Enable Authentication".
 
+![](/Installation/Authentication/a/image-1755205300223.png)
+
 A dialog will then prompt you to enter a username and password. These are the credentials for the Root/Super User.
+
+![](/Installation/Authentication/a/image-1755205332650.png)
 
 Once you have entered the credentials, click the "Setup" button and you will be redirected to a login screen, enter the credentials of the Root/Super User here to login.
 
@@ -14,11 +18,11 @@ LubeLogger relies on an invitation-only model for creating/registering new users
 
 To Create/Invite New Users, you first need to enable authentication and set up the Root User credentials. Once that is done, upon login, you will see that there is now a dropdown to the right of the "Settings" tab that has your root username on it. Click on that dropdown and select "Admin Panel"
 
-![](/Installation/Authentication/a/image-1726779846750.png)
+![](/Installation/Authentication/a/image-1751643343774.png)
 
 You will now be taken to a new page. There are two sections in this page, Tokens and Users. 
 
-![](/Installation/Authentication/a/image-1731770062313.png)
+![](/Installation/Authentication/a/image-1751643318230.png)
 
 Tokens are used for invitees to register their user account or existing users to reset their password. These tokens are single use and are validated against the email address they are issued for.
 

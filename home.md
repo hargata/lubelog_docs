@@ -26,6 +26,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 ### Advanced:
 - [[API|Advanced/API]]
 - [[Webhook|Advanced/Webhook]]
+- [[Vehicle Maps|Advanced/Vehicle Maps]]
 - [[Kiosk|Advanced/Kiosk]]
 - [[Custom Widgets|Advanced/Custom Widgets]]
 - [[Authentication via OIDC|Advanced/OpenID]]

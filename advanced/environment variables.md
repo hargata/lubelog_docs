@@ -28,6 +28,8 @@ OpenIDConfig__DisableRegularLogin=true/false(default: false) - auto re-direct us
 OpenIDConfig__UserInfoURL=UserInfo URL as alternative option to retrieve user claims(required for certain OpenID Providers)
 OpenIDConfig__LogOutURL=Log Out URL for OIDC Provider, required if DisableRegularLogin=true.
 EnableAuth=true/false(default: false) - Allows users to configure whether if authentication is enabled via environment variable.
+DefaultReminderEmail="" - Default root user email address.
+EnableRootUserOIDC=true/false(default: false) - Whether root user should authenticate via OIDC.
 UserNameHash="" - SHA256 Hash of the root username.
 UserPasswordHash="" - SHA256 Hash of the root password.
 LUBELOGGER_ALLOWED_FILE_EXTENSIONS="" - Allowed file extensions for document uploads, use '*' to allow all file types.

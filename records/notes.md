@@ -18,7 +18,7 @@ Notes can be pinned by checking the "Pinned" switch when creating or editing a n
 
 Pinned Notes will always show up at the very top of the list.
 
-![](/Records/Notes/a/image-1726779754183.png)
+![](/Records/Notes/a/image-1760391067621.png)
 
 ## Bulk Operations
 On top of the standard Duplicate and Delete functions for records, you can also toggle, pin, or unpin notes in bulk.

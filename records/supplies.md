@@ -2,7 +2,7 @@
 
 The Supplies tab is where you can keep track of supplies or parts purchased for your vehicle, either as spare parts or for future use.
 
-![](/Records/Supplies/a/image-1726780208841.png)
+![](/Records/Supplies/a/image-1760823536499.png)
 
 The Supplies tab is hidden by default and requires the user to enable it via the Settings tab under the "Visible Tabs" section.
 
@@ -10,7 +10,7 @@ The Supplies tab is hidden by default and requires the user to enable it via the
 
 To add a new Supply Record, simply click the "Add New Supply Record" button and you will be prompted for the details of the Supply.
 
-![](/Records/Supplies/a/image-1726780215893.png)
+![](/Records/Supplies/a/image-1760823559201.png)
 
 Supplies that are in the system that have a quantity greater than zero are available for [[Requisitioning|Records/Service Records#supplies-requisition]]
 

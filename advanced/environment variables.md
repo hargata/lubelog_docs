@@ -3,8 +3,8 @@
 These are all of the environment variables you can pass into LubeLogger and what they do
 
 > [!NOTE]
-> Save time and effort using the [LubeLogger Configurator](https://lubelogger.com/configure)
-> to generate your .env file
+> This is no longer the recommended method for configuring LubeLogger. 
+> See [[Configuring Server Settings|Installation/Server Settings]]
 
 ```
 LC_ALL=en_US.UTF-8 <- Locale and Language Settings, this will affect how numbers, currencies, and dates are formatted.

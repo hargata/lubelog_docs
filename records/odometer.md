@@ -8,6 +8,8 @@ The Odometer tab is hidden by default and must be enabled by checking the "Odome
 
 This tends to happen when odometer records are inserted out of chronological order, to fix this, all you have to do is select all of the records, right click on them, and select "Recalculate Distance" This will update all of the initial mileages to be in a chronological order.
 
+![](/Records/Odometer/a/image-1760533945560.png)
+
 ## API Integration
 As with the other tabs, odometer readings can be retrieved via a GET endpoint and inserted via a POST API endpoint.
 

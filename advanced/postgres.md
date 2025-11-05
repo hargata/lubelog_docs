@@ -1,18 +1,16 @@
 # Postgres
 
-For users that desire additional scalability for their backend, LubeLogger now supports a PostgreSQL backend.
+For users that desire additional scalability for their backend, LubeLogger supports a PostgreSQL backend.
 
 ## Configuration
 
-To configure LubeLogger to use PostgreSQL, you must have at least one database for lubelogger to use. On LubeLogger versions newer than 1.3.5, the app schema will be automatically created, on previous versions you will need to manually create the schema.
-
-![](/Advanced/Postgres/a/image-1726781278694.png)
-
-Once that is done, simply inject the environment variable `POSTGRES_CONNECTION` with your connection string, example:
+Add your connection string to the Server Settings Configurator, example:
 
 ```
 Host=<yourserveraddress:port>;Username=<yourusername>;Password=<yourpassword>;Database=<databasename>;
 ```
+
+![](/Advanced/Postgres/a/image-1760823415775.png)
 
 LubeLogger will then automatically create the tables it needs, all records will then be saved and loaded from Postgres tables from now on.
 

@@ -2,7 +2,7 @@
 
 The Dashboard is where you get an overview of your vehicle. It is the default tab that the user will see when they click into a vehicle and it is also the only tab that cannot be hidden.
 
-![](/Vehicles/Dashboard/a/image-1727554329575.png)
+![](/Vehicles/Dashboard/a/image-1760722844690.png)
 
 The Dashboard includes the following data:
 - Expenses By Type By Year/All Time(Top-Left)
@@ -17,7 +17,7 @@ The year dropdown above the pie chart(top-left) allows the user to filter the ag
 
 Note: Changing the selected year will automatically refresh the Expenses by Type Pie Chart, the Total Expenses by Month and the Fuel Mileage By Month Bar Charts.
 
-![](/Vehicles/Dashboard/a/image-1726782316958.png)
+![](/Vehicles/Dashboard/a/image-1760722786465.png)
 
 ### Notes on Distance Traveled
 The Distance Traveled chart relies solely on the odometer records found in [[Odometer|Records/Odometer]]

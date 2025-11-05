@@ -31,31 +31,7 @@ If your Docker Volumes are bound and persisted correctly, you should have no los
 
 ## Windows/Linux Standalone
 
-### The Easy Way
-
 1. Create a backup
-2. Important: Make a copy of `appsettings.json`
-3. Download the latest version of LubeLogger from the Release section
-4. Extract the archive over your existing LubeLogger installation.
-5. Replace `appsettings.json` with the copy.
-
-This method can be inconsistent due to the various approach users can use to extract the archive, certain archive tools will delete all folders in the destination path that don't exist within the archive. If your LubeLogger instance is missing data, restore the backup.
-
-### The Consistent Way
-
-1. Create a backup
-2. Make a copy of the following files and folders:
- Pre 1.4.3:
-- `appsettings.json`
-- `config\UserConfig.json`
-- `data\cartracker.db`
-- `wwwroot\images`
-- `wwwroot\documents`
-- `wwwroot\translations`
- 1.4.3 and newer:
-- `appsettings.json`
-- `data\*`(all files and folders)
-
-3. Download the latest version of LubeLogger from the Release section
-4. Extract the archive over your existing LubeLogger installation.
-5. Replace the files and folders with the files and folders you made copies of.
+2. Download the latest version of LubeLogger from the Release section
+3. Extract the archive over your existing LubeLogger installation.
+4. Restore the backup if there is data loss

@@ -2,7 +2,7 @@
 
 The Planner tab is where you can plan and track progress of future or current plans for your vehicle. The planner tab consists of 4 swimlanes(vertical panels) where plans can be moved to different stages via drag and drop.
 
-![](/Records/Planner/a/image-1726780281703.png)
+![](/Records/Planner/a/image-1760534208604.png)
 
 The records stored in Service/Repair/Upgrade tabs tend to be inserted retroactively(after the work is done), hence the Planner tab was developed to keep track of To-Do's.
 
@@ -11,7 +11,7 @@ The Planner tab is hidden by default, you must enable it by checking the "Planne
 
 To add a new plan, simply click on the "Add Plan Record" button and fill in the details of the plan.
 
-![](/Records/Planner/a/image-1726780285003.png)
+![](/Records/Planner/a/image-1760534236951.png)
 
 ## Plan Type
 You are required to select at least one Plan Type - Service, Repair, or Upgrade. When the Plan Record is moved to Done, the Plan Record will be automatically converted into the selected type and it will then show up in its respective tab. The type is indicated by an icon corresponding to their respective tabs.
@@ -59,4 +59,6 @@ The shop icon indicates if the template has supplies requisition and the paper c
 
 To use the template, simply click on the "+" button. The app will then perform a check to ensure that there are sufficient quantities of the supplies used by the template. If there are insufficient quantities, an error message will pop up telling you which supply is short.
 
-![](/Records/Planner/a/image-1726780313818.png)
+![](/Records/Planner/a/image-1760534353392.png)
+
+![](/Records/Planner/a/image-1760534386953.png)

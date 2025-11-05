@@ -24,6 +24,8 @@ Note: the additional field option will only be displayed in the dropdown if any 
 
 ## Vehicle Level Additional Fields
 
-As of 1.2.4, users can now add additional fields at the vehicle level. Extra fields will now replace pinned notes in the tooltip that shows up when you hover over a vehicle tile.
+Extra Fields at the vehicle-level can be quickly accessed from the Garage tab by right clicking on the vehicle and then clicking "Extra Fields"
 
-![](/Advanced/Additional%20Fields/a/image-1726781501904.png)
+![](/Advanced/Additional%20Fields/a/image-1760815260140.png)
+
+![](/Advanced/Additional%20Fields/a/image-1760815273443.png)

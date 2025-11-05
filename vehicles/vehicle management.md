@@ -3,20 +3,20 @@
 ## Adding a Vehicle
 To add a vehicle, simply click on the green "+" button in the "Garage" tab. A dialog will then prompt you for the following details of the vehicle you wish to add: Year, Make, Model, License Plate, and optionally, a picture of the vehicle. If it's an Electric Vehicle, you should check the "Electric Vehicle" switch. This ensures that "fuel" economy is measured in kWh instead of gallons or liters.
 
-![](/Vehicles/Vehicle%20Management/a/image-1727554163143.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760532853548.png)
 
 Once you're done, click "Add New Vehicle" and the vehicle will now be visible in the Garage Tab.
 
-![](/Vehicles/Vehicle%20Management/a/image-1726782176398.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760532979869.png)
 
 ### Vehicles and Equipment without a License Plate
 LubeLogger can also be used to track other vehicles/equipment that aren't necessarily road-legal such as forklifts/golf carts/lawn mowers/etc. Since these vehicles do not have license plates and LubeLogger uses the License Plate field as an identifier by default, you may add an Extra Field at the Vehicle level so that the vehicle/equipment can still have an identifier. You must be logged on as the root user in order to set up Extra Fields. You can then set the extra field as the Vehicle Identifier, and the License Plate field will become optional.
 
-![](/Vehicles/Vehicle%20Management/a/image-1744818005541.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760533119264.png)
 
-![](/Vehicles/Vehicle%20Management/a/image-1744818147716.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760533060811.png)
 
-![](/Vehicles/Vehicle%20Management/a/image-1744818369771.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760533097373.png)
 
 ### Purchase and Sold Information
 These optional fields are used to calculate duration of ownership as well as any depreciation or appreciation costs. For length of ownership, you must provide a Purchase Date, if Sold Date was not provided, LubeLogger will calculate the amount of days between the current day and the Purchase Date as length of ownership. If both Purchase and Sold Costs are provided, LubeLogger will calculate any depreciation / appreciation costs as well as the cost per mile and cost per day. These data will show up in the Vehicle Maintenance History Report under its own section.
@@ -88,8 +88,24 @@ Once you have added them as a collaborator, their name will now show up in the C
 
 Once this is done, you should have the new collaborator refresh their browser and they should be able to see the vehicle in their Garage.
 
-### Copying Collaborators
+### Managing Collaborators for Multiple Vehicles
 
-To copy collaborators from one vehicle to another, simply navigate to the garage tab, drag and drop the vehicle you wish to copy the collaborators from onto the vehicle you wish to copy collaborators to. You will be prompted for confirmation and the collaborators will be copied over.
+To manage collaborators for multiple vehicles, select the vehicles in the garage, right click, and select "Manage Collaborators"
 
-![](/Vehicles/Vehicle%20Management/a/image-1726782240868.png)
+![](/Vehicles/Vehicle%20Management/a/image-1760533315878.png)
+
+If all the vehicles have the same collaborators, you will be presented with this dialog which allows you to add or delete collaborators for all selected vehicles:
+
+![](/Vehicles/Vehicle%20Management/a/image-1760533423783.png)
+
+However, if that is not the case, you will be presented with this dialog instead:
+
+![](/Vehicles/Vehicle%20Management/a/image-1760533540967.png)
+
+In this example, `test` has access to both vehicles but `test2` only has access to one of the vehicles. The left side of the dialog is for Common Collaborators which means collaborators who have access to all selected vehicles, whereas Partial Collaborators on the right side is for collaborators who only have access to some of the selected vehicles.
+
+Adding a Collaborator in this dialog will add the user as a Common Collaborator.
+
+You can also move selected Partial Collaborator on the right to become a Common Collaborator by selecting the users and clicking "Move Selected"
+
+You can delete both Common or Partial Collaborators by selecting them and clicking "Remove Selected"

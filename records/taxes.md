@@ -1,7 +1,7 @@
 # Taxes
 The Taxes tab keeps track of fees and expenses that are incurred by your vehicle that are unrelated to odometer readings.
 
-![](/Records/Taxes/a/image-1726780399871.png)
+![](/Records/Taxes/a/image-1760533872922.png)
 
 Examples of records that can be recorded in the Taxes tab include: 
 - Registration Fee/Road Tax
@@ -14,7 +14,7 @@ Examples of records that can be recorded in the Taxes tab include:
 ## Recurring Taxes
 Taxes can be set to be recurring so that a new record is created at every interval. The newly-created tax record is duplicated from the last recurrence.
 
-![](/Records/Taxes/a/image-1726780403362.png)
+![](/Records/Taxes/a/image-1760533900840.png)
 
 The way this functionality works is that when the user clicks into a vehicle detail, a check is performed if there are any recurring tax records that are past due. If there are, those tax records are then duplicated with the due date pushed out by the set interval. The newly duplicated will be set to recur at the set interval while the tax record that was past due will have recurrance disabled.
 

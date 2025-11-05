@@ -4,6 +4,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 
 ### Installation Instructions:
 - [[Getting Started|Installation/Getting Started]]
+- [[Configuring Server Settings|Installation/Server Settings]]
 - [[Authentication|Installation/Authentication]]
 - [[Upgrading|Installation/Upgrade]]
 - [[Troubleshooting|Installation/Troubleshooting]]
@@ -19,6 +20,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [[Odometer|Records/Odometer]]
 - [[Planner|Records/Planner]]
 - [[Supplies|Records/Supplies]]
+- [[Inspections|Records/Inspections]]
 - [[Reminders|Records/Reminders]]
 - [[Notes|Records/Notes]]
 - [[Bulk Operations|Records/Bulk Operations]]

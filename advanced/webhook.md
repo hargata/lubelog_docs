@@ -1,6 +1,6 @@
 # Webhook
 
-To add a webhook to LubeLogger, you just have to inject the environment variable "LUBELOGGER_WEBHOOK" with the Webhook URL.
+To add a webhook to LubeLogger, you just have to add the WebHook URL in the Server Settings Configurator
 
 Example payload:
 

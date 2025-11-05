@@ -32,26 +32,14 @@ ASPNETCORE_URLS=https://+:443;http://+:80
 5. Run `docker-compose up -d` to start up the container and `https://localhost` will now have a valid cert.
 
 ## Windows
-If you're running LubeLogger as the standalone Windows executable, first read [this article by Microsoft](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-8.0#configure-https-in-appsettingsjson)
+If you're running LubeLogger as the standalone Windows executable:
 
 1. Convert the .PEM / .CRT files into .PFX, read [this StackOverflow post](https://stackoverflow.com/questions/808669/convert-a-cert-pem-certificate-to-a-pfx-certificate)
-2. Open and modify appsettings.json located in the same directory as the CarCareTracker executable and add the following lines(note that in this example I used bob as the password for the cert)
-> [!NOTE]
-> You can use the [LubeLogger Configurator](https://lubelogger.com/configure)
-> for this step
-```
-"Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://localhost:80"
-      },
-      "HttpsInlineCertFile": {
-        "Url": "https://localhost:443",
-        "Certificate": {
-          "Path": "<path to .pfx file>",
-          "Password": "bob"
-        }
-      }
-}
-```
-3. Restart the app and `https://localhost` will now have a valid cert.
+2. Navigate to the Server Settings Configurator and click Next until you get to "Server Endpoints"
+
+![](/Advanced/HTTPS/a/image-1760534668164.png)
+
+Note: Replace `0.0.0.0` with your IPv4 address
+
+3. Save the Settings by clicking to the end of the Server Settings Configurator and click "Save"
+4. Restart the app and `https://localhost` will now have a valid cert.

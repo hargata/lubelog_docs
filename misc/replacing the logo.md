@@ -2,17 +2,13 @@
 
 You can overwrite the LubeLogger Logo that is displayed in the Login and Home/Garage page.
 
-To do so, simply inject an environment variable with the key `LUBELOGGER_LOGO_URL` into your lubelogger instance either via the .env file or the appsettings.json file.
+To do so, navigate to the Server Settings Configurator and override both the Logo and Small Logo URL:
 
-## .env
-```
-LUBELOGGER_LOGO_URL=<URL to your Logo>
-```
+![](/Misc/Replacing%20The%20Logo/a/image-1760632621293.png)
 
-## appsettings.json
-```
-LUBELOGGER_LOGO_URL:<URL to your Logo>
-```
+Default size for the Logo is 204 x 48px
+
+Default size for the Small Logo is 48 x 48px
 
 ## Non-replaceable Locations
 - Logo in the About section in the Settings tab

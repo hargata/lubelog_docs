@@ -26,3 +26,7 @@ This page contains a list of frequently requested feature requests for features 
 >| ### Data Interpolation For Missed/Partial Fuel Ups
 >| 
 >| The aggregates and calculations in LubeLogger are only as good as the data you put in. The app will not and should not make any assumptions about the distance you have traveled or any missed fuel ups in between records. If your record keeping is imperfect, you cannot expect perfect data aggregates.
+
+>| ### Support for Imports from Proprietary Formats(e.g.: .abp)
+>| 
+>| LubeLogger will never support data imports from proprietary formats used by other software, and we will reject any PR that adds such features. Some might argue that it's perfectly legal to reverse engineer proprietary formats and that we have the legal standing to do so, but ask yourself, if a frivolous lawsuit is thrown our way, will you represent us in court, pay for our legal fees, and compensate us for the time and pay loss from having to attend court?

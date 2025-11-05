@@ -9,7 +9,7 @@ Upgrade Records: These are work performed on the vehicle that enhances the funct
 
 To add a new record, simply navigate to the tab and click the "Add New Service/Repair/Upgrade Record" button and you will be prompted to input the details of the record.
 
-![](/Records/Service%20Records/a/image-1726780618500.png)
+![](/Records/Service%20Records/a/image-1760391174921.png)
 
 ## Searching Records
 To search through records, simply click on the dropdown button to the right of the Add Record button and select "Search". This is also where you can toggle column visibilities.
@@ -24,7 +24,7 @@ To perform a column-specific search, e.g.: only show records with "Oil" in the D
 ## Moving Records
 To move existing records between the three tabs, simply click on the dropdown button to the right of the Delete button and select the tab to move the record to.
 
-![](/Records/Service%20Records/a/image-1726780635763.png)
+![](/Records/Service%20Records/a/image-1760391211507.png)
 
 ## Bulk Operations
 You can perform bulk operations on multiple records at the same time, for bulk operation details across all tabs, see [[Bulk Operations|Records/Bulk Operations]]
@@ -66,7 +66,7 @@ LubeLogger is not an inventory management system. Unit costs are calculated as a
 ### Supplies Requisition History
 To view supplies that have been requisitioned for a specific record, simply click on the yellow Shop button to the left of the Delete button
 
-![](/Records/Service%20Records/a/image-1726780684428.png)
+![](/Records/Service%20Records/a/image-1760391385145.png)
 
 For more information on Supplies, see [[Supplies|Records/Supplies]]
 
@@ -78,4 +78,20 @@ You are given the option to attach an existing, recurring reminder upon creating
 ### Adding Reminders
 You are given the option to set a reminder upon creating a record. This is helpful for recurring services such as Oil Changes. To do so, simply check the "Add Reminder" switch before clicking the "Add New Service Record" button. A new dialog will show up after the record has been created and all the fields will be pre-populated.
 
+![](/Records/Service%20Records/a/image-1760391415331.png)
+
 For more information on Reminders, see [[Reminders|Records/Reminders]]
+
+## Attachments
+
+You can add attachments in the form of files, links, and even other records.
+
+### Linking to Other Records
+
+To link to other records, add a link attachment with a location in the following format
+
+`::RecordType:RecordId`
+
+So linking to a Service Record with Id 1 will look like
+
+`::ServiceRecord:1`

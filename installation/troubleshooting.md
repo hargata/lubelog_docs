@@ -6,14 +6,13 @@ Common issues and steps you can take to fix them.
 >| ### Feature(s) Stopped Working After Updating to Latest Version
 >| Your browser might have cached an older version of a JavaScript(JS) file which is no longer compatible with the current version of LubeLogger. Try the following steps:
 >| 
->| 1. Verify - Try navigating to LubeLogger in Incognito mode.
+>| 1. Verify - Try navigating to LubeLogger in Incognito mode or on another device
 >| 2. If everything functions as expected in Incognito, you have a caching issue.
 >| 3. Clear your browser's cache or perform a hard reload(hit CTRL+SHIFT+R multiple times on most browsers)
+>| 4. Check if the site works as intended on the [demo site](https://demo.lubelogger.com)
 
 >| ### Can't Send Email via SMTP
 >| Note that for most email providers, you can no longer use your account password to authenticate and must instead generate an app password for LubeLogger to be able to authenticate on your behalf to your email provider's SMTP server.
->| 
->| If you've downloaded the .env file from the GitHub repo, there is an issue with how the file gets formatted when it is downloaded, you will have to copy the contents and re-create one manually on your machine.
 
 >| #### Gmail SMTP Authentication Error
 >| 
@@ -33,17 +32,11 @@ Common issues and steps you can take to fix them.
 
 >| ### Can't input values in "," format / shows up as 0.
 >| 
->| Ensure that your locale environment variables are configured correctly, note that if running via docker, both environment variables LANG and LC_ALL have to be identical.
+>| Ensure that your locale is configured correctly in the Server Settings Configurator
 
 >| ### Locale Not Updating/¤ Currency Symbol/Date Format Issues
 >| 
->| Try the following steps:
->| 
->| 1. Check if the environment variables are injected correctly(does SMTP/OICD configurations work)
->| 2. Re-deploy Container
->| 3. If that doesn't work, try re-creating the `.env` file
->| 4. If using Portainer/Synology, you might have to enter the environment variables manually.
->| 5. One last thing to try: copy and paste the environment variables into docker-compose.yml
+>| You will need to restart the docker container/executable after configuring locale
 
 ## Postgres Issues
 
@@ -89,83 +82,9 @@ Common issues and steps you can take to fix them.
 >| 
 >| This error is either caused by a missing field in the input object or if the API client is passing the payload in as json. If all fields are already provided, check and make sure that the payload is passed in as either form-data or x-www-urlencoded
 
-### Can't Access LubeLogger Instance from Other Devices
-
-This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on localhost. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add the following section into `appsettings.json`
- 
- Note: replace `10.0.0.4:5000/5011` with your local ip address and port
- 
- ```
- "Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://10.0.0.4:5000"
-      },
-      "Https": {
-        "Url": "https://10.0.0.4:5011"
-      },
-    }
-}
-```
-
-Verify that your JSON is still valid, make sure to add `,` appropriately, or you will get an error.
-
-Full Example of appsettings.json with the Kestrel portion added:
-
-```
-{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
-  "UseDarkMode": false,
-  "UseSystemColorMode": false,
-  "EnableCsvImports": true,
-  "UseMPG": true,
-  "UseDescending": false,
-  "EnableAuth": false,
-  "DisableRegistration": false,
-  "EnableRootUserOIDC": false,
-  "HideZero": false,
-  "AutomaticDecimalFormat": false,
-  "EnableAutoReminderRefresh": false,
-  "EnableAutoOdometerInsert": false,
-  "EnableShopSupplies": false,
-  "ShowCalendar":  true,
-  "EnableExtraFieldColumns": false,
-  "UseUKMPG": false,
-  "UseThreeDecimalGasCost": true,
-  "UseThreeDecimalGasConsumption": true,
-  "UseMarkDownOnSavedNotes": false,
-  "HideSoldVehicles": false,
-  "PreferredGasMileageUnit": "",
-  "UserColumnPreferences": [],
-  "UseUnitForFuelCost": false,
-  "PreferredGasUnit": "",
-  "UserLanguage": "en_US",
-  "VisibleTabs": [ 0, 1, 4, 2, 3, 6, 5, 8 ],
-  "TabOrder": [ 8, 9, 10, 0, 1, 4, 2, 7, 3, 6, 5 ],
-  "DefaultTab": 8,
-  "UserNameHash": "",
-  "UserPasswordHash": "",
-  "DefaultReminderEmail": "",
-  "Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://10.0.0.4:5000"
-      },
-      "Https": {
-        "Url": "https://10.0.0.4:5011"
-      },
-     }
-  }
-}
-```
-
-Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
+>| ### Can't Access LubeLogger Instance from Other Devices
+>| 
+>| This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on localhost. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
 
 ### NGINX / Cloudflare 
 LubeLogger is a web app that runs on Kestrel, it literally doesn't matter if it's deployed behind a reverse proxy or Cloudflare tunnel. As long as the app can receive traffic on the port it's configured on, it will run.

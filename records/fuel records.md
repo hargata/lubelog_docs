@@ -2,7 +2,7 @@
 
 The Fuel tab keeps track of the fuel mileage for your vehicle.
 
-![](/Records/Fuel%20Records/a/image-1726780458423.png)
+![](/Records/Fuel%20Records/a/image-1760391495417.png)
 
 LubeLogger supports fuel mileage calculation in the following formats:
 - American Imperial (MPG)
@@ -19,7 +19,7 @@ For the most accurate results it is recommended that you always fill your vehicl
 ### Partial Fuel Ups
 On the occassions that you cannot fill your vehicle up to full, you can defer the fuel mileage calculation by unchecking the "Is Filled To Full" switch. Doing this tells the app to defer fuel mileage calculation until the next Full Fill Up.
 
-![](/Records/Fuel%20Records/a/image-1726780463015.png)
+![](/Records/Fuel%20Records/a/image-1760391532353.png)
 
 #### Note for Electric Vehicles(EV)
 LubeLogger does not support calculating consumption by charge percentages because the State of Charge(SoC) readout is inherently inaccurate based on multiple variables - such as nominal battery capacity, battery degradation, temperature, and margins of errors and buffers built into your Battery Management System(BMS).

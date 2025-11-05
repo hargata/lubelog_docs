@@ -60,6 +60,8 @@ Tags: Find records that contains these tags(separated by white space, not applic
 
 ![](/Advanced/API/a/image-1755538298273.png)
 
+## Cleaning up Temp/Unlinked Files
+The clean up endpoint: `/api/cleanup` will clear up any temp files created by LubeLogger. Adding the `deepClean=true` parameter will also clear out any unlinked attachments(files where the record it is associated with no longer exists). You need to have access to the root user credentials to access this endpoint.
 
 ## Testing
 You can utilize any REST API testing tool to test your use-case.

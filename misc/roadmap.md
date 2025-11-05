@@ -1,5 +1,60 @@
 # Roadmap
 
+## 1.5.4
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with Cost Table pagination when there is exactly 5 years of data
+  - Fixed bug with Reminder Records when it's created from another record
+- Features
+  - Custom Widgets are now loaded async with Dashboard tab
+  - Add Tags Filter for Reminder API's
+  - Add Inspection Tab(Issue: #513, #979)
+  - Add functionality to link records via attachments
+- Misc
+  - Bump Npgsql and MailKit versions
+
+## 1.5.3
+Released 10/13/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with translation editor when translation content exceeds certain size
+  - Fixed bug with cost data table having too many year columns(Issue: #1098)
+- Features
+  - Allow URLs to individual tabs to be bookmarked
+  - Custom Widgets now persists acknowledgement in the session
+  - Add bulk collaborator management
+  - Add Kestrel Configuration in Server Settings Configurator
+  - Add Jwks Endpoint for OIDC to validate issuer signature
+  - Add ability to populate certain OIDC settings from well-known url
+  - Add Fixed Intervals option for Reminders
+- Misc
+  - Removed `.env` file and updated docker-compose files
+  - Stopgap measure for handling PDF attachments(Issue: #1075)
+
+## 1.5.2
+Released 09/19/2025
+
+### Objectives
+- Features
+  - Add search function in garage(Issue: #1059)
+  - Add Attachment Preview for Images(Issue: #1047)
+  - Add circle as a shape for vehicle map(PR: #1068) by [Zeromark30](https://github.com/Zeromark30)
+  - Add user-configurable auth cookie lifespan, max 90 days(Issue: #951)
+- Misc
+  - Fixed traefik docker compose(PR: #1067) by [Jekotia](https://github.com/Jekotia)
+
+## 1.5.1
+Released 09/09/2025
+
+### Objectives
+- Bug Fixes
+  - Fix Vehicle Map Opacity for EU locales(Issue: #1039)
+  - Fix URL Attachments breaking Attachment Exports(Issue: #1050)
+- Features
+  - Global Search settings now persist client side(Issue: #1035)
+
 ## 1.5.0
 Released 08/21/2025
 

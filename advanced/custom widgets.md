@@ -13,7 +13,9 @@ When LubeLogger loads the Dashboard view, it will check if there is a `widgets.h
 
 ![](/Advanced/Custom%20Widgets/a/image-1730740032073.png)
 
-Clicking on this button will bring up a dialog/modal which will render everything in `widgets.html` (JavaScripts included)
+Clicking on this button will bring up a dialog/modal which display everything in `widgets.html` (JavaScripts included)
+
+JavaScripts are rendered async when the Dashboard tab is loaded.
 
 ## Configuring Custom Widgets
 
@@ -22,7 +24,9 @@ This feature requires the user to be comfortable with the following paradigms:
 - Consuming JSON data from API Endpoints
 - Displaying data in DOM elements
 
-To get started, Set Environment Variable `LUBELOGGER_CUSTOM_WIDGETS` to `true`
+To get started, enable Custom Widgets in the Server Settings Configurator
+
+![](/Advanced/Custom%20Widgets/a/image-1762621592000.png)
 
 1. Navigate to the Settings tab and open up your Developer's Console(F12)
 2. Run command `showCustomWidgets()`

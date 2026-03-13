@@ -1,10 +1,5 @@
 # Inspections
 
-::: Warning
-# Future Feature
-The following sections describes a feature that will only be available in a future release
-:::
-
 Inspection Records allow you to fill out inspection forms for your vehicles and create action items.
 
 ## Enabling Inspections
@@ -14,6 +9,8 @@ Inspections can be enabled in the Settings Tab.
 ![](/Records/Inspections/a/image-1762305685178.png)
 
 ## Creating a Template
+
+[Video Walkthrough](https://www.youtube.com/watch?v=_SBe_7bNMuk)
 
 To add an inspection record, you must first create a template.
 
@@ -96,3 +93,9 @@ Inspection Records will evaluate as "Fail" if any one of its fields is evaluated
 Criterias that caused the field to be evaluated as "Fail" will be highlighted in red and can be viewed in the Inspection Record
 
 ![](/Records/Inspections/a/image-1762358900912.png)
+
+## Duplicating Inspection Templates
+
+You can duplicate existing Inspection Templates by going into edit mode and clicking the dropdown next to the "Edit" button:
+
+![](/Records/Inspections/a/image-1762871819071.png)

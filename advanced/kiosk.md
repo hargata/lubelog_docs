@@ -1,7 +1,9 @@
 # Kiosk
 
 ## Kiosk View
-Navigating to `https://yourlubeloggerdomain/kiosk` will bring up the Kiosk view. This is a pseudo real-time dashboard that refreshes approximately every minute(indicated by the progressbar at the very top of the page)
+Navigating to `https://yourlubeloggerdomain/kiosk` will bring up the Kiosk view.
+
+If [[Web Socket|Advanced/Webhook#websocket]] is enabled, this is a real-time dashboard, otherwise it falls back to refreshing every 60 seconds.
 
 By default(without any parameters), it will default to the Vehicle view.
 
@@ -35,14 +37,13 @@ e.g.: `https://yourlubeloggerdomain/kiosk?exclusions=1,3,5` will exclude vehicle
 
 If your use-case for the Kiosk involves a full-time display, you will need to set up an access token as the user session cookie set by LubeLogger expires in either 24 hours or 7 days(depending if `Remember Me` was selected during Login). Setting up an access token allows the kiosk to continue functioning even if the user session has long expired.
 
-1. Ensure that your user's password does not contain `:` in it
-2. Encode `{yourusername}:{yourpassword}` in Base64
-3. You will need to login at least once before navigating to your Kiosk URL
+1. Generate a readonly [[API Key|Advanced/API#api-keys]]
+2. You will need to login at least once before navigating to your Kiosk URL
 4. Open up the developer's console(F12 on most browsers)
 5. Some browsers will require you to acknowledge what you're doing.
-6. Type in `setAccessToken('{Base64 Encoded token generated in step 2}')`
+6. Type in `setAccessToken('{API Key you generated in step 1}')`
 7. Hit enter and you should get a response stating the access token was set.
 
-E.g.: If the username is `test` and the password is `1234` the base64 encoded token would be `dGVzdDoxMjM0` You would then type in `setAccessToken('dGVzdDoxMjM0')` in the developer's console.
+E.g.: If the generated API key is `abcde` You would then type in `setAccessToken('abcde')` in the developer's console.
 
 Test this by navigating to your LubeLogger instance in a different tab and logging out. Your kiosk dashboard should continue functioning.

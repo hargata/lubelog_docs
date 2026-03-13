@@ -22,6 +22,11 @@ This is the primary way of configuring locale in LubeLogger and serves as an alt
 
 Changing locale settings will require LubeLogger to be restarted, for docker this means restarting the container, for Windows/Linux executable this means closing out the console app and re-opening it.
 
+### Common Date Locale Overrides
+
+- en-SE provides ISO8601(YYYY-MM-DD) format while preserving English month names.
+- en-GB provides (DD/MM/YYYY) format
+
 ## SMTP
 
 You can configure and test the SMTP settings within the Server Settings Configurator

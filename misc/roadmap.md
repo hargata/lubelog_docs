@@ -1,6 +1,119 @@
 # Roadmap
 
+## 1.6.1
+Released 02/26/2026
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with vehicleId in vehicleinfo endpoint(PR: #1269 by [iamdabe](https://github.com/iamdabe))
+  - Fixed back/forward buttons in browser not updating selected tabs
+  - Fixed bug with costs not displayed in Kiosk Planner
+- Features
+  - Add query params to URL for adding and editing records
+  - Add QR Codes for adding and editing records(Discussion #1275)
+  - Failing criterias in Inspection Records are now highlighted
+  - Add retry policy(exponential backoff and jitter) to webhooks
+  - Add Web Socket to facilitate realtime-sync for dashboards 
+- Misc
+  - Minor UI and code cleanup. 
+
+## 1.6.0
+Released 02/10/2026
+
+### Objectives
+- Bug Fixes
+  - Fixed minor UI bugs from 1.5.9
+- Features
+  - Add API endpoints for Notes(PR: #1257 by [iamdabe](https://github.com/iamdabe))
+- Misc
+  - .NET 10 Migration(update with caution and be prepared to rollback if needed)
+  - Resolved some tech debt
+
+## 1.5.9
+Released 02/09/2026
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with decimals in supplies(Issue: #1239)
+  - Fixed bug with mobile nav menu on iOS browsers(Issue: #1213)
+- Features
+  - Add `autoIncludeEquipment` parameter to Odometer Add API endpoint(Issue: #1233, PR: #1234 by [iamdabe](https://github.com/iamdabe))
+  - Add supplies to Fuel Records(Issue: #914)
+  - Allow API users to append vehicleId in json body(Issue: #1237)
+  - Improve support for mobile browsers 
+  - Re-designed Supply Usage modal(Issue: #934)
+  - Re-designed Planner(Issue: #923)
+  - Re-designed Kiosk, now only accepts API Keys for persistent auth
+  - Add option to disable zoom on mobile devices
+  - Add VehicleId in API response(PR: #1255 by [iamdabe](https://github.com/iamdabe))
+- Misc
+  - Minor code cleanup(PR: #1256)
+
+## 1.5.8
+Released 01/26/2026
+
+### Objectives
+- Bug Fixes
+  - Fixed Attachment Name bug(Issue: #1217)
+  - Fixed line breaks on markdown(Issue: #1219)
+  - Fixed bug with moving records
+  - Fixed bug with redirect URL post login
+- Features
+  - Add setting to auto fill Odometer when adding records(Issue: #1212, PR #851 by [Forceu](https://github.com/Forceu))
+  - Add API Keys as authentication method(Issue: #855)
+- Misc
+  - Code Cleanup and bump dependencies
+  - Cleaned up Postgres Docker Compose(Issue: #1104)
+
+## 1.5.7
+Released 01/11/2026
+
+### Objectives
+- Bug Fixes
+  - Fixed Global Search with non-English characters(Issue: #1185)
+  - Fixed Distance Traveled on Report Header(Issue: #1168)
+  - Fixed navbar bug on certain browsers(Issue: #1194)
+- Features
+  - Add distance export to increment odometer of towed vehicles(Issue: #644)
+  - Add Equipment tab to track distance accumulated on tire sets(Issue: #413)
+  - Cleaned up the API page
+  - Add API endpoint to recalculate odometer record distance(Issue: #1204)
+
+## 1.5.6
+Released 12/27/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed Socket Exhaustion Exception using IHttpClientFactory
+  - Force SweetAlerts to comply with dark theme(Issue: #952)
+  - Fixed missing validation for purchase and sold date(PR: #1177)
+- Features
+  - Reminder API Send endpoint now takes an optional reminder id(Issue: #865)
+  - Log failed login attempts(Issue: #1145)
+  - Add Optional Filters for CSV Exports(Issue: #921)
+  - Add API endpoint to retrieve all files in Temp folder
+  - Add simplified API endpoints for vehicles(Issue: #1033)
+- Misc
+  - Minor styling cleanup
+
+## 1.5.5
+Released 11/30/2025
+
+### Objectives
+- Bug Fixes
+  - Fixed bug with exporting records with image in notes(Issue: #1133)
+  - Fixed bug with Visible Tabs not allowing for less than 6 visible tabs(Issue: #1147)
+- Features
+  - Add a confirm password field when setting up credentials for root user(Prevents: #1136)
+  - Add User Households to inherit vehicles from a user(Issue: #136, #538, #565, #577)
+  - Garage context menu now displays tabs in order based on user config(PR: #1156)
+  - Add API endpoints for supply records(PR: #1166)
+  - Add API endpoints to retrieve all records for all vehicles(PR: #1167)
+- Misc
+  - Add logging for JWT validation error for OIDC
+
 ## 1.5.4
+Released 11/08/2025
 
 ### Objectives
 - Bug Fixes
@@ -11,6 +124,8 @@
   - Add Tags Filter for Reminder API's
   - Add Inspection Tab(Issue: #513, #979)
   - Add functionality to link records via attachments
+  - Add functionality to copy link for attachments
+  - Add API endpoint for retrieving configured extra fields(Issue: #1119)
 - Misc
   - Bump Npgsql and MailKit versions
 

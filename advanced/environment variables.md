@@ -42,3 +42,27 @@ LUBELOGGER_INVARIANT_API=true/false(default: false) - whether API response shoul
 LUBELOGGER_OPEN_REGISTRATION=true/false(default: false) - Allow users to generate their own registration token
 LUBELOGGER_DOMAIN="" - URL to Instance of LubeLogger used to generate email links
 ```
+
+## Sample Config Files
+
+[Sample serverConfig.json](https://github.com/hargata/lubelog_scripts/blob/main/misc/serverConfig.json)
+
+[Sample userConfig.json](https://github.com/hargata/lubelog_scripts/blob/main/misc/userConfig.json)
+
+Tab Id Map:
+
+```
+ServiceRecord = 0,
+RepairRecord = 1,
+GasRecord = 2,
+TaxRecord = 3,
+UpgradeRecord = 4,
+ReminderRecord = 5,
+NoteRecord = 6,
+SupplyRecord = 7,
+Dashboard = 8,
+PlanRecord = 9,
+OdometerRecord = 10,
+VehicleRecord = 11,
+InspectionRecord = 12
+```

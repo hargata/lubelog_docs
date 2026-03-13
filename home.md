@@ -11,6 +11,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 
 ### Vehicle Management:
 - [[Adding/Editing/Deleting Vehicles|Vehicles/Vehicle Management]]
+- [[Adding Collaborators|Vehicles/Collaborators]]
 - [[Dashboard|Vehicles/Dashboard]]
 
 ### Tabs:
@@ -21,6 +22,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [[Planner|Records/Planner]]
 - [[Supplies|Records/Supplies]]
 - [[Inspections|Records/Inspections]]
+- [[Equipment|Records/Equipment]]
 - [[Reminders|Records/Reminders]]
 - [[Notes|Records/Notes]]
 - [[Bulk Operations|Records/Bulk Operations]]

@@ -1,10 +1,12 @@
 # Getting Started
 ## Docker
+
+[Youtube Tutorial](https://www.youtube.com/playlist?list=PL2aZOA2wNP8tn-Py-XTF-B6nfx8l-4SwA)
+
 The Docker Container Repository is the most reliable and up-to-date distribution channel for LubeLogger.
 You need to have Docker installed and Virtualization enabled(typically a BIOS setting).
 
-You will then clone the following files onto your computer from the repository 
-- docker-compose.yml(docker-compose-traefik.yml if using Traefik)
+You will then clone [docker-compose.yml](https://github.com/hargata/lubelog/blob/main/docker-compose.yml) onto your computer from the repository.
 
 Run the following commands to pull down the image and run container.
 ```

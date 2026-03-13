@@ -3,16 +3,49 @@
 LubeLogger provides API endpoints to retrieve and add records, full documentation of these endpoints can be found at `/api`.
 
 ## Authentication
-If authentication is enabled, it implements Basic Auth based on RFC2617, which stipulates that the "token" is passed in as a Base64-encoded string comprising of a username and password separated by a colon(":"). Because of this, neither the username nor password can contain a colon(":") character.
+The following authentication methods are supported:
 
-### In-line URL Authorization
-In-line authorization is supported as of 1.4.3 as it is necessary for authorization for the calendar endpoint. Use it as so:
+- Basic Auth(RFC2617)
+- API Keys
 
-`https://username:password@lubeloggerdomain/api/endpoint`
+### Basic Auth
+Basic Auth is implemented based on RFC2617, which stipulates that the "token" is passed in as a Base64-encoded string comprising of a username and password separated by a colon(":"). Because of this, neither the username nor password can contain a colon(":") character. The "token" is passed in via either through the request headers or in-line authorization for clients that support it.
 
-For the calendar endpoint, it will look something like this:
+Examples:
+- Request Headers: `Authorization: Basic dGVzdDoxMjM0`
+- In-line authorization: `https://test:1234@demo.lubelogger.com/api/calendar`
 
-`https://test:1234@demo.lubelogger.com/api/calendar`
+Note: Single Sign On(SSO) users should not use Basic Auth for API integrations and should instead rely on API Keys.
+
+### API Keys
+API keys are randomly-generated tokens that allow integrations to access and modify data on behalf of the user, they are equivalent to user credentials thus it is important to store them safely and only be provided to applications you trust. Unlike Basic Auth, API keys can only be used to access `/api` endpoints.
+
+API Keys can be scoped to the following roles:
+- Viewer(view only)
+- Editor(view, add, and edit)
+- Manager(view, add, edit, and delete)
+
+#### Generating API Keys
+
+![](/Advanced/API/a/image-1769440246859.png)
+
+![](/Advanced/API/a/image-1769440258568.png)
+
+![](/Advanced/API/a/image-1769440270031.png)
+
+![](/Advanced/API/a/image-1769440296389.png)
+
+The API key will be generated and displayed in a popup, note that this is the only time you will see this API key, so make sure to copy it before closing the popup.
+
+![](/Advanced/API/a/image-1769440309595.png)
+
+#### Using API Keys
+
+API keys can be passed in via request headers or appended to the URL(in-line authorization).
+
+Examples:
+- Request Headers: `x-api-key: 3f757919f42548cebec90a692815e048`
+- In-line authorization: `https://demo.lubelogger.com/api/vehicles?apiKey=3f757919f42548cebec90a692815e048`
 
 ## POST/PUT Encoding
 As of 1.4.2, LubeLogger supports bodies in both form-data, x-www-form-urlencoded, and JSON format.

@@ -11,8 +11,11 @@ Common issues and steps you can take to fix them.
 >| 3. Clear your browser's cache or perform a hard reload(hit CTRL+SHIFT+R multiple times on most browsers)
 >| 4. Check if the site works as intended on the [demo site](https://demo.lubelogger.com)
 
->| ### Can't Send Email via SMTP
->| Note that for most email providers, you can no longer use your account password to authenticate and must instead generate an app password for LubeLogger to be able to authenticate on your behalf to your email provider's SMTP server.
+>| ### Can't Send Email via SMTP - Authentication Error
+>| Note that for most email providers, you can no longer use your account password to authenticate and must instead generate an app password for LubeLogger to be able to authenticate on your behalf to your email provider's SMTP server. Note that certain email providers have completely phased out basic authentication for SMTP and is pushing for OAuth, LubeLogger does not support this method of authentication for emails, you must use a relay or switch to a different provider that still supports basic auth.
+
+>| ### Can't Send Email via SMTP - Works only when Testing
+>| Restart the container/app. You have most likely hit the inotify/file watcher limit, which prevents the server settings configuration file from getting reloaded.
 
 >| #### Gmail SMTP Authentication Error
 >| 
@@ -22,21 +25,25 @@ Common issues and steps you can take to fix them.
 >| 
 >| Those are purely informational, add this line in your environment variables to prevent information logs from showing up in the console.
 >| 
->| `LOGGING__LOGLEVEL__DEFAULT=Error`
+>| `LOGGING__LOGLEVEL__DEFAULT=Error` or `LOGGING__LOGLEVEL__DEFAULT=Warning`
 
 >| ### Data Missing after Update to Latest Version
 >|
->| You didn't persist your docker volumes for, check your docker-compose file. All your data should still be there however, they might just be anonymous volumes that you have to re-link back to the container.
+>| You didn't persist your docker volumes, check your docker-compose file. All your data should still be there however, they might just be anonymous volumes that you have to re-link back to the container.
 
 ## Locale Issues
 
->| ### Can't input values in "," format / shows up as 0.
+>| ### Can't input values in with "," as decimal separator / shows up as 0.
 >| 
 >| Ensure that your locale is configured correctly in the Server Settings Configurator
 
 >| ### Locale Not Updating/¤ Currency Symbol/Date Format Issues
 >| 
->| You will need to restart the docker container/executable after configuring locale
+>| You will need to restart the docker container/executable after configuring locale through the Server Settings Configurator. If configured using Environment Variables, you will need to run `docker compose up` again. If none of these work, you will need to check if the locale is installed on your OS as some don't come with locales enabled(i.e.: Arch Linux)
+
+>| ### Currency and Decimal Separator Mismatch
+>| 
+>| Certain locales have different decimal separators for currencies and regular decimals(i.e.: regular decimals are written as 12,34 but currencies are written as $12.34). This configuration is not supported within LubeLogger and can cause issues on certain labels within the app. You will need to select a different locale for your region where the decimal separators are identical.
 
 ## Postgres Issues
 
@@ -48,11 +55,11 @@ Common issues and steps you can take to fix them.
 
 >| ### No Option to Login via OIDC
 >| 
->| Make sure Authentication is enabled, check "Enable Authentication" in Settings tab and set up root user credentials
+>| Make sure Authentication is enabled, check "Enable Authentication" in Settings tab and set up root user credentials. You must also provide a name for the OIDC Provider in the Server Settings Configurator in order for the option to login via OIDC to show up on the login page.
 
 >| ### Logging-in via OIDC Requires Token
 >| 
->| LubeLogger operates on an invite-only basis, a token will need to be generated for the user logging in via OIDC if it is their first time. Once an account for the user exists they will no longer be prompted for the token in subsequent login attempts.
+>| LubeLogger operates on an invite-only basis by default, a token will need to be generated for the user logging in via OIDC if it is their first time. Once an account for the user exists they will no longer be prompted for the token in subsequent login attempts. You can enable "Open Registration" in the Server Settings Configurator so that users can generate a token for themselves.
 
 >| ### No Auto-Redirect to OIDC Provider
 >| 
@@ -76,15 +83,19 @@ Common issues and steps you can take to fix them.
 >| 
 >| You have reached the maximum limit of file watchers across all your Docker Containers. In LubeLogger, file watchers are crucial for detecting changes to configuration files. To fix this, you will need to increase the inotify limit above 128.
 
+>| ### All changes to server settings are only reflected when restarted
+>| 
+>| You have reached the maximum limit of file watchers across all your Docker Containers. In LubeLogger, file watchers are crucial for detecting changes to configuration files. To fix this, you will need to increase the inotify limit above 128.
+
 ## API Issues
 
 >| ### Input Object Invalid
 >| 
->| This error is either caused by a missing field in the input object or if the API client is passing the payload in as json. If all fields are already provided, check and make sure that the payload is passed in as either form-data or x-www-urlencoded
+>| This error is either caused by a missing field in the input object or if you have an additional trailing or leading space in the property names.
 
 >| ### Can't Access LubeLogger Instance from Other Devices
 >| 
->| This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on localhost. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
+>| This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on `localhost`. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [[Setting up HTTPS|Advanced/HTTPS]] for HTTPS/SSL Cert Configuration
 
 ### NGINX / Cloudflare 
 LubeLogger is a web app that runs on Kestrel, it literally doesn't matter if it's deployed behind a reverse proxy or Cloudflare tunnel. As long as the app can receive traffic on the port it's configured on, it will run.

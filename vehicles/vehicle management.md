@@ -9,6 +9,9 @@ Once you're done, click "Add New Vehicle" and the vehicle will now be visible in
 
 ![](/Vehicles/Vehicle%20Management/a/image-1760532979869.png)
 
+### Vehicle Images
+LubeLogger scales the vehicle's image based on the screen width of your device, which means that photos can be unintentionally cut-off/cropped if the vehicle is not within certain margins/paddings. We have created [this tool](https://hargata.github.io/hargata/lubelog_camera/) to allow you to take photos that always displays the vehicle regardless of screen size.
+
 ### Vehicles and Equipment without a License Plate
 LubeLogger can also be used to track other vehicles/equipment that aren't necessarily road-legal such as forklifts/golf carts/lawn mowers/etc. Since these vehicles do not have license plates and LubeLogger uses the License Plate field as an identifier by default, you may add an Extra Field at the Vehicle level so that the vehicle/equipment can still have an identifier. You must be logged on as the root user in order to set up Extra Fields. You can then set the extra field as the Vehicle Identifier, and the License Plate field will become optional.
 
@@ -68,44 +71,4 @@ On mobile devices, the "Delete Vehicle" button is available within the menu, loc
 
 ![](/Vehicles/Vehicle%20Management/a/image-1726782216539.png)
 
-## Collaborators
-
-If more than one individual logs records to your vehicle(e.g.: spouse, employee, etc) and they have their own user account with LubeLogger, you can add them as a collaborator.
-
-### Adding a Collaborator
-
-To add new collaborator, simply navigate to the Dashboard tab in the vehicle details view and look to the bottom right:
-
-![](/Vehicles/Vehicle%20Management/a/image-1726782223006.png)
-
-Click on the blue Add User icon on the top left of the Collaborators panel and you will be prompted to type in their username, note that a user with that username must exist in the system or you will get an error.
-
-![](/Vehicles/Vehicle%20Management/a/image-1726782230259.png)
-
-Once you have added them as a collaborator, their name will now show up in the Collaborators list, and you will also be given the option to remove them.
-
-![](/Vehicles/Vehicle%20Management/a/image-1726782235900.png)
-
-Once this is done, you should have the new collaborator refresh their browser and they should be able to see the vehicle in their Garage.
-
-### Managing Collaborators for Multiple Vehicles
-
-To manage collaborators for multiple vehicles, select the vehicles in the garage, right click, and select "Manage Collaborators"
-
-![](/Vehicles/Vehicle%20Management/a/image-1760533315878.png)
-
-If all the vehicles have the same collaborators, you will be presented with this dialog which allows you to add or delete collaborators for all selected vehicles:
-
-![](/Vehicles/Vehicle%20Management/a/image-1760533423783.png)
-
-However, if that is not the case, you will be presented with this dialog instead:
-
-![](/Vehicles/Vehicle%20Management/a/image-1760533540967.png)
-
-In this example, `test` has access to both vehicles but `test2` only has access to one of the vehicles. The left side of the dialog is for Common Collaborators which means collaborators who have access to all selected vehicles, whereas Partial Collaborators on the right side is for collaborators who only have access to some of the selected vehicles.
-
-Adding a Collaborator in this dialog will add the user as a Common Collaborator.
-
-You can also move selected Partial Collaborator on the right to become a Common Collaborator by selecting the users and clicking "Move Selected"
-
-You can delete both Common or Partial Collaborators by selecting them and clicking "Remove Selected"
+Next steps: [[Adding Collaborators|Vehicles/Collaborators]]

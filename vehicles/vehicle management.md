@@ -12,6 +12,11 @@ Once you're done, click "Add New Vehicle" and the vehicle will now be visible in
 ### Vehicle Images
 LubeLogger scales the vehicle's image based on the screen width of your device, which means that photos can be unintentionally cut-off/cropped if the vehicle is not within certain margins/paddings. We have created [this tool](https://hargata.github.io/hargata/lubelog_camera/) to allow you to take photos that always displays the vehicle regardless of screen size.
 
+For users who want to scale the images themselves, please see the following guidelines:
+- 4:3 aspect ratio
+- vehicle must be 27.75% from the top and bottom(if the image is 1200px tall then it must be at least 333px from the top/bottom)
+- vehicle must be 4.875% from the left and right(if the image is 1600px wide then it must be at least 75px from the left/right)
+
 ### Vehicles and Equipment without a License Plate
 LubeLogger can also be used to track other vehicles/equipment that aren't necessarily road-legal such as forklifts/golf carts/lawn mowers/etc. Since these vehicles do not have license plates and LubeLogger uses the License Plate field as an identifier by default, you may add an Extra Field at the Vehicle level so that the vehicle/equipment can still have an identifier. You must be logged on as the root user in order to set up Extra Fields. You can then set the extra field as the Vehicle Identifier, and the License Plate field will become optional.
 

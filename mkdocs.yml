@@ -1,6 +1,10 @@
 site_name: LubeLogger Wiki
+repo_name: LubeLogger
+repo_url: https://github.com/hargata/lubelog
 theme:
  name: material
+ icon:
+  repo: fontawesome/brands/git-alt
 markdown_extensions:
   - admonition
   - pymdownx.details

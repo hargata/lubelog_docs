@@ -3,7 +3,7 @@
 ## Kiosk View
 Navigating to `https://yourlubeloggerdomain/kiosk` will bring up the Kiosk view.
 
-If [[Web Socket|Advanced/Webhook#websocket]] is enabled, this is a real-time dashboard, otherwise it falls back to refreshing every 60 seconds.
+If [Web Socket](/advanced/webhook#websocket) is enabled, this is a real-time dashboard, otherwise it falls back to refreshing every 60 seconds.
 
 By default(without any parameters), it will default to the Vehicle view.
 

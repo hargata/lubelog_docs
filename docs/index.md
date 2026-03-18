@@ -15,6 +15,7 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [Dashboard](/vehicles/dashboard)
 
 ### Records
+- [Service/Repair/Upgrade Records](/records/service records)
 - [Bulk Operations](/records/bulk operations)
 
 ### Advanced

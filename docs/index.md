@@ -17,6 +17,9 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 ### Advanced
 - [API](/advanced/api)
 - [Managing Additional Fields](/advanced/additional fields)
+- [Setting up HTTPS](/advanced/https)
+- [Postgres](/advanced/postgres)
+- [Environment Variables](/advanced/environment variables)
 
 ### Misc
 - [Project Roadmap](/misc/roadmap)

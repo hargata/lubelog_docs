@@ -58,7 +58,9 @@ If the Register link is not visible on the login page, it is because the registr
 
 ## Root/Super User
 You might be tempted to use your root credentials as your main credentials, and there is nothing wrong that, but you should know that there are a few caveats associated with the root user.
+
 1. Root/Super Users can view and edit all vehicles, this might seem like a great advantage initially, but it can be problematic if there are sufficient users and you have to sift through dozens of vehicles to get to yours.
+
 2. Any setting you enable/disable will become the default setting inherited by new users.
 
 For the reasons above, it is highly recommended that you create a second user for personal use and mark it as an Admin. See below for a breakdown of permissions across user tiers.

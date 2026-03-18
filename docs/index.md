@@ -16,6 +16,15 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 
 ### Records
 - [Service/Repair/Upgrade Records](/records/service records)
+- [Fuel Records](/records/fuel records)
+- [Taxes](/records/taxes)
+- [Odometer](/records/odometer)
+- [Planner](/records/planner)
+- [Supplies](/records/supplies)
+- [Inspections](/records/inspections)
+- [Equipment](/records/equipment)
+- [Reminders](/records/reminders)
+- [Notes](/records/notes)
 - [Bulk Operations](/records/bulk operations)
 
 ### Advanced
@@ -32,8 +41,11 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 - [Technical Docs](/advanced/technical docs)
 
 ### Misc
+- [Frequently Requested Feature Requests](/misc/frequently requested feature requests)
 - [Replacing the Logo](/misc/replacing the logo)
+- [Translations](/misc/translations)
 - [Project Roadmap](/misc/roadmap)
 - [Funding](/misc/funding)
 - [LubeLogger Builder](/misc/lubelogger builder)
 - [Branding](/misc/branding)
+- [Annual Hiatus](/misc/annual hiatus)

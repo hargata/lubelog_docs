@@ -104,6 +104,6 @@ You can utilize any REST API testing tool to test your use-case.
 [Postman Collection](https://github.com/hargata/lubelog_scripts/blob/main/misc/LubeLogger.postman_collection.json)
 
 ## Example Use Cases
-- Send Email Reminders, see [[Reminders|Records/Reminders#reminder-emails]]
-- Insert Odometer Records, see [[Odometer|Records/Odometer#api-integration]]
+- Send Email Reminders, see [Reminders](/records/reminders#reminder-emails)
+- Insert Odometer Records, see [Odometer](/records/odometer#api-integration)
 - Create DB Backups, [Example BASH Script](https://github.com/hargata/lubelog_scripts/blob/main/bash/makebackup.sh) [Example DOS Script](https://github.com/hargata/lubelog_scripts/blob/main/dos/makebackup.bat)

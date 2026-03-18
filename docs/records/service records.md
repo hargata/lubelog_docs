@@ -27,7 +27,7 @@ To move existing records between the three tabs, simply click on the dropdown bu
 ![alt text](images/1773861577121-image.png)
 
 ## Bulk Operations
-You can perform bulk operations on multiple records at the same time, for bulk operation details across all tabs, see [[Bulk Operations|Records/Bulk Operations]]
+You can perform bulk operations on multiple records at the same time, for bulk operation details across all tabs, see [Bulk Operations](/records/bulk operations)
 
 ### Bulk Edit
 To edit multiple records at once, simply select more than one record, then right click and select "Edit Multiple"

@@ -16,12 +16,15 @@ This is the documentation for LubeLogger, a self-hosted, open-source, collaborat
 
 ### Advanced
 - [API](/advanced/api)
+- [Kiosk](/advanced/kiosk)
+- [Authentication via OIDC](/advanced/openid)
 - [Managing Additional Fields](/advanced/additional fields)
 - [Setting up HTTPS](/advanced/https)
 - [Postgres](/advanced/postgres)
 - [Environment Variables](/advanced/environment variables)
 
 ### Misc
+- [Replacing the Logo](/misc/replacing the logo)
 - [Project Roadmap](/misc/roadmap)
 - [Funding](/misc/funding)
 - [LubeLogger Builder](/misc/lubelogger builder)

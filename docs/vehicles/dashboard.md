@@ -16,7 +16,7 @@ The Dashboard includes the following data:
 
 - Fuel Mileage By Month By Year/All Time(Bottom-Center)
 
-- Collaborators(Bottom-Right), see [Adding Collaborators](/vehicles/collaborators)
+- Collaborators(Bottom-Right), see [Adding Collaborators](/Vehicles/Collaborators)
 
 ## Filtering Data by Year
 The year dropdown above the pie chart(top-left) allows the user to filter the aggregated data by year. The year selections are populated by retrieving all years between the year of the oldest record and the current year. If the oldest record is less than 5 years old, the selections will still be populated by the last 5 years.
@@ -26,7 +26,7 @@ Note: Changing the selected year will automatically refresh the Expenses by Type
 ![alt text](images/1773846364414-image.png)
 
 ### Notes on Distance Traveled
-The Distance Traveled chart relies solely on the odometer records found in [Odometer](/records/odometer)
+The Distance Traveled chart relies solely on the odometer records found in [Odometer](/Records/Odometer)
 
 ## Global Search
 The Global Search function allows the user to search for keywords across different records. Note that the search results are dependent on the visible tabs, i.e.: the user will not get results in Service Records if the Service Records tab is not visible. Incremental Search is enabled by default, which means that the app will search as the user is typing, this can cause performance issues if you have a large amount of records, so it is recommended that incremental search is disabled and search be performed manually by either pressing the Enter key or clicking the Search button.

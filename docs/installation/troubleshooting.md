@@ -57,7 +57,7 @@ Common issues and steps you can take to fix them.
 
 ??? question "Schema Does Not Exist"
     
-    Make sure that there is a schema named "app" in the database as specified in the Postgres connection string. For more information, see [Postgres](/advanced/postgres)
+    Make sure that there is a schema named "app" in the database as specified in the Postgres connection string. For more information, see [Postgres](/Advanced/Postgres)
 
 ## OpenID Connect(OIDC) Issues
 
@@ -79,7 +79,7 @@ Common issues and steps you can take to fix them.
 
 ??? question "Issues with OpenID Provider"
     
-    If none of the above troubleshooting steps worked, the problem might exist on the OpenID Provider side of things, LubeLogger has a built-in OpenID debugger which can be used to identify what key information might be missing from the OpenID Provider's Authorization Response. See [Advanced Troubleshooting](/advanced/openid#advanced-troubleshooting) for more information.
+    If none of the above troubleshooting steps worked, the problem might exist on the OpenID Provider side of things, LubeLogger has a built-in OpenID debugger which can be used to identify what key information might be missing from the OpenID Provider's Authorization Response. See [Advanced Troubleshooting](/Advanced/OpenID#advanced-troubleshooting) for more information.
 
 ## Server Issues
 
@@ -103,7 +103,7 @@ Common issues and steps you can take to fix them.
 
 ??? question "Can't Access LubeLogger Instance from Other Devices"
     
-    This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on `localhost`. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [Setting up HTTPS](/advanced/https) for HTTPS/SSL Cert Configuration
+    This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on `localhost`. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [Setting up HTTPS](/Advanced/HTTPS) for HTTPS/SSL Cert Configuration
 
 
 ## Networking Issues

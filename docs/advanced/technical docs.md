@@ -42,7 +42,7 @@ User passwords are hashed using SHA256 and only stored in hashed forms for non-r
 Root user credentials are hashed using SHA256 for both username and password. These credentials are not stored in the database and instead are stored in a separate config json file. What this means is that in the event of a data breach, the root user credentials are still going to be very secure.
 
 ## OpenID Connect(OIDC) User Credentials
-If a user registered via OIDC by logging in via the OIDC Provider and then providing a registration token, a randomized hashed password is generated on their behalf. See [OpenID](/advanced/openid)
+If a user registered via OIDC by logging in via the OIDC Provider and then providing a registration token, a randomized hashed password is generated on their behalf. See [OpenID](/Advanced/OpenID)
 
 ## Email/SMTP Credentials
 LubeLogger does not store SMTP credentials and in fact should NOT be responsible for storing SMTP credentials. SMTP credentials can only be injected via environment variables or appsettings.
@@ -60,7 +60,7 @@ LubeLogger is not, and will never be a cryptography software, as there is simply
 
 LubeLogger utilizes LiteDB, a sqlite-like noSQL file-based database. Generally this is a non-issue due to how efficient the DB is at indexing, but relying on a file database means that LubeLogger can potentially be subjected to file locks and access issues if there are enough concurrent requests made to the database. 
 
-If you find yourself needing more scalability for the database backend, consider configuring LubeLogger to utilize a [PostgreSQL backend](/advanced/postgres).
+If you find yourself needing more scalability for the database backend, consider configuring LubeLogger to utilize a [PostgreSQL backend](/Advanced/Postgres).
 
 ## Reminder Urgencies
 Reminder urgencies are calculated at every tab load. i.e.: whenever a tab is loaded in the vehicle details page, an async method retrieves the reminders, calculates their urgencies and automatically refresh past due reminders(if enabled). This can potentially present scalability issues if a vehicle has a large amount of recurring reminders.

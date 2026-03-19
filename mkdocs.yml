@@ -15,7 +15,7 @@ nav:
   - 'Home': /
   - 'Installation Instructions':
     - 'Getting Started': /Installation/Getting Started
-    - 'Configuring Server Settings': /Installation/server settings
+    - 'Configuring Server Settings': /Installation/Server Settings
     - 'Authentication': /Installation/Authentication
     - 'Upgrade': /Installation/Upgrade
     - 'Troubleshooting': /Installation/Troubleshooting

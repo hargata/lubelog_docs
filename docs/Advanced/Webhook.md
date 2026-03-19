@@ -35,7 +35,7 @@ Example Discord Webhook Payload:
 
 Web sockets allows multiple external applications to subscribe to events, unlike webhooks which only allows for one subscriber at a time. Web Sockets also enables real-time sync within LubeLogger which is the ideal approach for [Kiosk](/Advanced/Kiosk) mode.
 
-Web socket can be enabled in the [Server Settings Configurator](/Installation/server settings)
+Web socket can be enabled in the [Server Settings Configurator](/Installation/Server Settings)
 
 ![alt text](images/1773858923092-image.png)
 

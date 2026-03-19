@@ -16,7 +16,7 @@ Once you have entered the credentials, click the "Setup" button and you will be 
 ![alt text](images/1773777812343-image.png)
 
 ## Creating / Inviting New Users
-LubeLogger relies on an invitation-only model for creating/registering new users. It is highly recommended that LubeLogger is configured with SMTP in order to make the user registration process as smooth as possible, see [Server Settings Configurator](/Installation/server settings#smtp) for more information regarding SMTP configuration.
+LubeLogger relies on an invitation-only model for creating/registering new users. It is highly recommended that LubeLogger is configured with SMTP in order to make the user registration process as smooth as possible, see [Server Settings Configurator](/Installation/Server Settings#smtp) for more information regarding SMTP configuration.
 
 To Create/Invite New Users, you first need to enable authentication and set up the Root User credentials. Once that is done, upon login, you will see that there is now a dropdown to the right of the "Settings" tab that has your root username on it. Click on that dropdown and select "Admin Panel"
 

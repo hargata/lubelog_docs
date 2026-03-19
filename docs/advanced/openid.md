@@ -1,6 +1,6 @@
 # Authenticating via OpenID Connect
 
-Configure OIDC for LubeLogger using the [Server Settings Configurator](/installation/server settings)
+Configure OIDC for LubeLogger using the [Server Settings Configurator](/Installation/server settings)
 
 The following sample shows how to set up OIDC with Google as the provider with the LubeLogger instance running on `https://localhost:5000`
 

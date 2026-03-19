@@ -5,7 +5,7 @@ Reminders are future tasks where the urgency are based on how close the user is 
 ![alt text](images/1773873553421-image.png)
 
 ## Adding Reminders
-Reminders can either be added directly on the Reminders tab by clicking the "Add Reminder" button or via adding a new [Service/Repair/Upgrade Record](/records/service records#adding-reminders).
+Reminders can either be added directly on the Reminders tab by clicking the "Add Reminder" button or via adding a new [Service/Repair/Upgrade Record](/Records/Service Records#adding-reminders).
 
 ## Reminder Metrics
 Similar to the maintenance schedule outlined in your vehicle's user manual, the urgency of a Reminder can be set either via a due date, a future odometer reading, or whichever comes first.

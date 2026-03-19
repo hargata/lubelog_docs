@@ -4,23 +4,23 @@ This page contains a list of frequently requested feature requests for features 
 
 ??? question "Change Wording on Buttons"
 
-    Create your own translation file and you can change the wording to whatever you like. See [Translations](/misc/translations)
+    Create your own translation file and you can change the wording to whatever you like. See [Translations](/Misc/Translations)
 
 ??? question "Notification for Reminders"
 
-    This can be accomplished by setting up a cron job for the send reminders API endpoint. When the API endpoint is hit all collaborators will receive an email. If a Default Reminder Email is configured, it will also be included as a recipient for all reminder emails. See [Reminder Emails](/records/reminders#reminder-emails)
+    This can be accomplished by setting up a cron job for the send reminders API endpoint. When the API endpoint is hit all collaborators will receive an email. If a Default Reminder Email is configured, it will also be included as a recipient for all reminder emails. See [Reminder Emails](/Records/Reminders#reminder-emails)
 
 ??? question "Imported Vehicle with Different Odometer Unit"
 
-    If you have an imported vehicle with different odometer units(i.e.: Kei trucks using KM in the US which uses Miles), you can configure the vehicle level Odometer Multiplier which will automatically adjusts all odometer inputs from your vehicle into your current units(i.e.: KM to Miles by multiplying the odometer input with 0.621) See [Odometer Multiplier](/vehicles/vehicle%20management#odometer-multiplier)
+    If you have an imported vehicle with different odometer units(i.e.: Kei trucks using KM in the US which uses Miles), you can configure the vehicle level Odometer Multiplier which will automatically adjusts all odometer inputs from your vehicle into your current units(i.e.: KM to Miles by multiplying the odometer input with 0.621) See [Odometer Multiplier](/Vehicles/vehicle%20management#odometer-multiplier)
 
 ??? question "Display KM/L instead of L/100KM"
 
-    This is user-configurable, see [Alternate Fuel Units](/records/fuel%20records#alternate-fuel-units)
+    This is user-configurable, see [Alternate Fuel Units](/Records/fuel%20records#alternate-fuel-units)
 
 ??? question "Add Support for Foreign Locale(Different Currencies/Decimals/Date Formats)"
 
-    LubeLogger supports whichever locale is installed onto your system, please see [Docker Installation](/installation/getting%20started#docker) and [Troubleshooting Locale Issues](/installation/troubleshooting#locale-issues)
+    LubeLogger supports whichever locale is installed onto your system, please see [Docker Installation](/Installation/getting%20started#docker) and [Troubleshooting Locale Issues](/Installation/Troubleshooting#locale-issues)
 
 ??? question "Data Interpolation For Missed/Partial Fuel Ups"
 

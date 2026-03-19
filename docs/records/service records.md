@@ -27,7 +27,7 @@ To move existing records between the three tabs, simply click on the dropdown bu
 ![alt text](images/1773861577121-image.png)
 
 ## Bulk Operations
-You can perform bulk operations on multiple records at the same time, for bulk operation details across all tabs, see [Bulk Operations](/records/bulk operations)
+You can perform bulk operations on multiple records at the same time, for bulk operation details across all tabs, see [Bulk Operations](/Records/Bulk Operations)
 
 ### Bulk Edit
 To edit multiple records at once, simply select more than one record, then right click and select "Edit Multiple"
@@ -68,7 +68,7 @@ To view supplies that have been requisitioned for a specific record, simply clic
 
 ![alt text](images/1773861732192-image.png)
 
-For more information on Supplies, see [Supplies](/records/supplies)
+For more information on Supplies, see [Supplies](/Records/Supplies)
 
 ## Reminders
 
@@ -80,7 +80,7 @@ You are given the option to set a reminder upon creating a record. This is helpf
 
 ![alt text](images/1773861750720-image.png)
 
-For more information on Reminders, see [Reminders](/records/reminders)
+For more information on Reminders, see [Reminders](/Records/Reminders)
 
 ## Attachments
 

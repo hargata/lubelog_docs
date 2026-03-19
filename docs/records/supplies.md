@@ -8,7 +8,7 @@ To add a new Supply Record, simply click the "Add New Supply Record" button and 
 
 ![alt text](images/1773871585261-image.png)
 
-Supplies that are in the system that have a quantity greater than zero are available for [Requisitioning](/records/service records#supplies-requisition)
+Supplies that are in the system that have a quantity greater than zero are available for [Requisitioning](/Records/Service Records#supplies-requisition)
 
 ## Requisition History
 

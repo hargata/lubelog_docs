@@ -16,7 +16,7 @@ A zip file will be downloaded to your computer.
 
 ### Automated Method
 
-Use a script to hit the API endpoint for creating backups, see [API](/advanced/api#example-use-cases)
+Use a script to hit the API endpoint for creating backups, see [API](/Advanced/API#example-use-cases)
 
 You can automate the script using a cron job to create daily or weekly backups.
 

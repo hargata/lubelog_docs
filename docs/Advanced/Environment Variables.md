@@ -4,7 +4,7 @@ These are all of the environment variables you can pass into LubeLogger and what
 
 !!! info "This is no longer the recommended method for configuring LubeLogger"
 
-    See [Configuring Server Settings](/Installation/server settings)
+    See [Configuring Server Settings](/Installation/Server Settings)
 
 ```
 LC_ALL=en_US.UTF-8 <- Locale and Language Settings, this will affect how numbers, currencies, and dates are formatted.

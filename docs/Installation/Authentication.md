@@ -73,3 +73,5 @@ For the reasons above, it is highly recommended that you create a second user fo
 | Add/Remove Users       | No                                        | Yes                                       | Yes                    |
 | Make/Restore Backups   | No                                        | No                                        | Yes                    |
 | Disable Authentication | No                                        | No                                        | Yes                    |
+
+Next Steps: [Adding Vehicles](/Vehicles/Vehicle Management)

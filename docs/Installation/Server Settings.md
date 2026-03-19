@@ -40,3 +40,5 @@ You can enable OIDC authentication for the Root User in the Miscellaneous sectio
 ![alt text](images/1773778836265-image.png)
 
 The Root User Email Address will be used to identify which email coming from the IdP will be used to authenticate the user as the Root User. This email is also used as the default reminder email address for when the `/api/vehicle/reminders/send` is called.
+
+Next Steps: [Configuring Authentication](/Installation/Authentication)

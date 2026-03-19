@@ -50,3 +50,5 @@ chmod 777 ./CarCareTracker
 
 ## Test that It Works
 Whichever path you choose, once you get the app up and running, just navigate to the IP address and port the server is listening to and you should be able to see the app
+
+Next Steps: [Configuring Server Settings](/Installation/Server Settings)

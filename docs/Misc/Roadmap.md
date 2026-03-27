@@ -1,5 +1,19 @@
 # Roadmap
 
+## 1.6.3
+Scheduled Release 03/31/2026
+
+### Objectives
+- Bug Fixes
+    - Fixed bug with Fuel Economy Units not updating in mobile view
+    - Fixed bug with leftover views unoptimized for mobile(Issue: #1315)
+    - Fixed Path Traversal on Link Attachments
+- Features
+    - Add OIDC Registration Options(Issue: #1324)
+    - Add wrap-around for Description fields in Vehicle History(PR: #1009 by [trevordavies095](https://github.com/trevordavies095))
+- Misc
+    - Minor code refactor
+
 ## 1.6.2
 Released 03/16/2026
 

@@ -12,6 +12,22 @@ When enabled, LubeLogger will validate the state token echoed back by the OIDC p
 ## Proof of KeyCode Exchange(PKCE)
 When enabled, LubeLogger will generate and pass in a SHA-256-hashed challenge code to the OIDC provider.
 
+## OIDC User Registration
+
+There are three modes of registration when an OIDC user logs in to LubeLogger for the first time and they don't have an existing account in LubeLogger
+
+### Invitation Only
+
+An admin user must generate a token for this user in order for them to create an account in LubeLogger, or in the case where Open Registration is enabled, the user must provide a valid and reachable email address and generate a token themselves.
+
+### Disable Registration
+
+Only users with existing accounts in LubeLogger can log in via OIDC, they won't have an option to register an account when signing in via OIDC.
+
+### Auto Registration
+
+All users logging in via OIDC for the first time will have an account automatically created for them. Do not enable this option unless you fully trust all of the users in your IdP. Do not enable this option if you are not the admin of your IdP. Enabling this option allows anyone from your IdP to register an account in LubeLogger. The users in your IdP should all have valid and reachable email addresses for future correspondence.
+
 ## Testing
 Once you have all these environment variables injected correctly, you should see the ability to login via your OIDC provider. Note: Currently LubeLogger only supports one OIDC provider.
 

@@ -27,6 +27,8 @@ OpenIDConfig__UsePKCE=true/false(default: false) - whether LubeLogger should use
 OpenIDConfig__DisableRegularLogin=true/false(default: false) - auto re-direct user to OIDC login.
 OpenIDConfig__UserInfoURL=UserInfo URL as alternative option to retrieve user claims(required for certain OpenID Providers)
 OpenIDConfig__LogOutURL=Log Out URL for OIDC Provider, required if DisableRegularLogin=true.
+OpenIDConfig__DisableRegistration=true/false(default: false) - Disable Registration for new OIDC Users
+OpenIDConfig__AutoGenerateTokens=true/false(default: false) - Automatically Generate Tokens for new OIDC Users
 EnableAuth=true/false(default: false) - Allows users to configure whether if authentication is enabled via environment variable.
 DefaultReminderEmail="" - Default root user email address.
 EnableRootUserOIDC=true/false(default: false) - Whether root user should authenticate via OIDC.
@@ -64,5 +66,6 @@ Dashboard = 8,
 PlanRecord = 9,
 OdometerRecord = 10,
 VehicleRecord = 11,
-InspectionRecord = 12
+InspectionRecord = 12,
+EquipmentRecord = 13
 ```

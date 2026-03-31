@@ -1,7 +1,7 @@
 # Roadmap
 
 ## 1.6.3
-Scheduled Release 03/31/2026
+Released 03/31/2026
 
 ### Objectives
 - Bug Fixes
@@ -10,9 +10,11 @@ Scheduled Release 03/31/2026
     - Fixed Path Traversal on Link Attachments
 - Features
     - Add OIDC Registration Options(Issue: #1324)
+    - Login-related views now disabled when OIDC-only login is enforced(PR: #1329)
     - Add wrap-around for Description fields in Vehicle History(PR: #1009 by [trevordavies095](https://github.com/trevordavies095))
 - Misc
     - Minor code refactor
+    - Update dependencies
 
 ## 1.6.2
 Released 03/16/2026

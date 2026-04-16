@@ -11,7 +11,7 @@ Released 04/16/2026
     - API enhancements for creating backups
     - Add option for users to revert to grid view in mobile
     - Add Automated Events
-    - Add validation on CSV imports(Issue: #1333)
+    - Add validation on CSV imports(Issue: #1343)
 - Misc
     - Add warning when user selects locale with mismatched currency and number decimal separator
     - Add additional translation keys

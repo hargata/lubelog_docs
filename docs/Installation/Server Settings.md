@@ -65,7 +65,7 @@ Automated Events rely on a background service to check against the current time 
 
 This setting is used for the All Reminders and Reminder State Changed events. For All Reminders, it will only send out the email for reminders in the selected urgencies, for Reminder State Changed, it will send out notifications if a reminder's urgency was changed to one of the selected urgencies.
 
-### Reminder for State Changed Notification
+### Use Email for Reminder for State Changed Notification
 
 It is not recommended to enable this functionality if you are running LubeLogger on a low-powered server as it can cause performance issues.
 

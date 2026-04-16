@@ -41,4 +41,96 @@ You can enable OIDC authentication for the Root User in the Miscellaneous sectio
 
 The Root User Email Address will be used to identify which email coming from the IdP will be used to authenticate the user as the Root User. This email is also used as the default reminder email address for when the `/api/vehicle/reminders/send` is called.
 
+## Automated Events
+
+Automated Events allows LubeLogger to run automated events at a specific time or when there are reminder state changes.
+
+Automated Events rely on a background service to check against the current time on a minute interval. The time set is based on the server's timezone without UTC conversion.
+
+### Events
+
+- All Reminders - Send an email containing reminders to the vehicle collaborators
+
+- Reminder State Changed - Send an email(or external notification service) when a reminders urgency has changed
+
+- Send Backup Email - Create a backup and send the attachment to the root user
+
+- Update Recurring Tax Records - creates new tax records for recurring tax records when they expire
+
+- Clear temp files - clears out the temp folder
+
+- Perform deep clean - clears out temp folder AND unlinked documents or thumbnails
+
+### Urgencies Tracked
+
+This setting is used for the All Reminders and Reminder State Changed events. For All Reminders, it will only send out the email for reminders in the selected urgencies, for Reminder State Changed, it will send out notifications if a reminder's urgency was changed to one of the selected urgencies.
+
+### Reminder for State Changed Notification
+
+It is not recommended to enable this functionality if you are running LubeLogger on a low-powered server as it can cause performance issues.
+
+### External Notification Service
+
+These integrations are only used for sending out notifications on reminder state change.
+
+Placeholders:
+```
+{vehicleId} - id of the vehicle
+{title} - the year, make, model, and identifier(license plate) of the vehicle
+{priority} - priority mapping
+{message} - description and urgency of the reminder
+{link} - link to the vehicle's reminders page
+{domain} - domain the LubeLogger instance is running on
+```
+
+Placeholders will be substituted on the URL, Header Values, and Body when the notification is sent out. All notifications are sent out as a POST method so a request body is always expected.
+
+#### Sample NTFY Service Notification
+
+```
+Content Type: text/plain
+Not Urgent: 1
+Urgent: 3
+Very Urgent: 4
+Past Due: 5
+Headers:
+{
+  "Click": "{link}",
+  "Priority": "{priority}",
+  "Title": "{title}"
+}
+Body:
+{message}
+```
+
+#### Sample Discord Webhook Service Notification
+```
+Content Type: application/json
+Not Urgent: 1673044
+Urgent: 16761095
+Very Urgent: 14431557
+Past Due: 7107965
+Headers:
+{}
+Body:
+{
+  "username": "LubeLogger",
+  "avatar_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png",
+  "content": "{message}",
+  "embeds": [
+    {
+      "title": "{title}",
+      "url": "{link}",
+      "description": "{message}",
+      "color":{priority},
+      "author": {
+        "name": "LubeLogger",
+        "url": "{domain}",
+        "icon_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png"
+      }
+    }
+  ]
+}
+```
+
 Next Steps: [Configuring Authentication](/Installation/Authentication)

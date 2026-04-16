@@ -1,5 +1,22 @@
 # Roadmap
 
+## 1.6.4
+Released 04/16/2026
+
+### Objectives
+- Features
+    - Allow users to add multiple reminders to new and existing plans(Issue: #1333, #427)
+    - Updated email templates for password reset and registration
+    - Refactored code to no longer require app restart when making SMTP-related changes
+    - API enhancements for creating backups
+    - Add option for users to revert to grid view in mobile
+    - Add Automated Events
+    - Add validation on CSV imports(Issue: #1333)
+- Misc
+    - Add warning when user selects locale with mismatched currency and number decimal separator
+    - Add additional translation keys
+    - Minor code refactor related to SMTP methods
+
 ## 1.6.3
 Released 03/31/2026
 

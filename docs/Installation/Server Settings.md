@@ -103,6 +103,31 @@ Body:
 {message}
 ```
 
+#### Sample Gotify Service Notification
+
+```
+Content Type: application/json
+Not Urgent: 0
+Urgent: 3
+Very Urgent: 5
+Past Due: 10
+Headers:
+{}
+Body:
+{
+  "title": "{title}",
+  "message": "{message}",
+  "priority": {priority},
+  "extras": {
+    "client::notification": {
+      "click": {
+        "url": "{link}"
+      }
+    }
+  }
+}
+```
+
 #### Sample Discord Webhook Service Notification
 ```
 Content Type: application/json

@@ -70,3 +70,8 @@ nav:
     - 'LubeLogger Builder': /Misc/Lubelogger Builder
     - 'Branding': /Misc/Branding
     - 'Annual Hiatus': /Misc/Annual Hiatus
+
+extra:
+  analytics:
+    provider: google
+    property: G-9DXRV4P2TL

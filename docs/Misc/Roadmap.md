@@ -1,5 +1,22 @@
 # Roadmap
 
+## 1.6.5
+Scheduled Release TBD
+
+### Objectives
+- Bug Fixes
+    - Fixed view for devices with exactly 576px screen width(Issue: #1355)
+    - Fixed minor grid alignment issue in household modal
+    - Fixed distance units on Reminder Recurring Interval(Issue: #484)
+    - Fixed current tab not persisting when editing vehicle
+- Features
+    - Add support for file-based secrets injection i.e.: Docker Secrets(Issue: #1349)
+    - Add API endpoint to retrieve locale configuration on server
+    - Add option to toggle vehicle thumbnail resize(Issue: #1353)
+- Misc
+    - Update dependencies
+    - Minor code refactor related to SMTP methods
+
 ## 1.6.4
 Released 04/16/2026
 

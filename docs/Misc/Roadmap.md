@@ -9,6 +9,7 @@ Scheduled Release TBD
     - Fixed minor grid alignment issue in household modal
     - Fixed distance units on Reminder Recurring Interval(Issue: #484)
     - Fixed current tab not persisting when editing vehicle
+    - Fixed issue with default tab order for Equipment tab
 - Features
     - Add support for file-based secrets injection i.e.: Docker Secrets(Issue: #1349)
     - Add API endpoint to retrieve locale configuration on server

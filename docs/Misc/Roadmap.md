@@ -14,6 +14,8 @@ Scheduled Release TBD
     - Add support for file-based secrets injection i.e.: Docker Secrets(Issue: #1349)
     - Add API endpoint to retrieve locale configuration on server
     - Add option to toggle vehicle thumbnail resize(Issue: #1353)
+    - Add feature to create plan record template from existing record(Issue: #427)
+    - Add API key auth for vehicle thumbnail and documents(Issue: #1360)
 - Misc
     - Update dependencies
     - Minor code refactor related to SMTP methods

@@ -85,77 +85,105 @@ Placeholders:
 
 Placeholders will be substituted on the URL, Header Values, and Body when the notification is sent out. All notifications are sent out as a POST method so a request body is always expected.
 
-#### Sample NTFY Service Notification
+??? info "Sample NTFY Service Notification"
 
-```
-Content Type: text/plain
-Not Urgent: 1
-Urgent: 3
-Very Urgent: 4
-Past Due: 5
-Headers:
-{
-  "Click": "{link}",
-  "Priority": "{priority}",
-  "Title": "{title}"
-}
-Body:
-{message}
-```
+    Content Type: `text/plain`
 
-#### Sample Gotify Service Notification
+    Priority Mapping:
 
-```
-Content Type: application/json
-Not Urgent: 0
-Urgent: 3
-Very Urgent: 5
-Past Due: 10
-Headers:
-{}
-Body:
-{
-  "title": "{title}",
-  "message": "{message}",
-  "priority": {priority},
-  "extras": {
-    "client::notification": {
-      "click": {
-        "url": "{link}"
-      }
+    | Urgency | Value |
+    |---|---|
+    |Not Urgent|1|
+    |Urgent|3|
+    |Very Urgent|4|
+    |Past Due|5|
+
+    Headers:
+    ```
+    {
+      "Click": "{link}",
+      "Priority": "{priority}",
+      "Title": "{title}"
     }
-  }
-}
-```
+    ```
 
-#### Sample Discord Webhook Service Notification
-```
-Content Type: application/json
-Not Urgent: 1673044
-Urgent: 16761095
-Very Urgent: 14431557
-Past Due: 7107965
-Headers:
-{}
-Body:
-{
-  "username": "LubeLogger",
-  "avatar_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png",
-  "content": "{message}",
-  "embeds": [
+    Body:
+    ```
+    {message}
+    ```
+
+??? info "Sample Gotify Service Notification"
+
+    Content Type: `application/json`
+
+    Priority Mapping:
+
+    | Urgency | Value |
+    |---|---|
+    |Not Urgent|0|
+    |Urgent|3|
+    |Very Urgent|5|
+    |Past Due|10|
+
+    Headers:
+    ```
+    {}
+    ```
+
+    Body:
+    ```
     {
       "title": "{title}",
-      "url": "{link}",
-      "description": "{message}",
-      "color":{priority},
-      "author": {
-        "name": "LubeLogger",
-        "url": "{domain}",
-        "icon_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png"
+      "message": "{message}",
+      "priority": {priority},
+      "extras": {
+        "client::notification": {
+          "click": {
+            "url": "{link}"
+          }
+        }
       }
     }
-  ]
-}
-```
+    ```
+
+??? info "Sample Discord Webhook Service Notification"
+
+    Content Type: `application/json`
+
+    Priority Mapping:
+
+    | Urgency | Value |
+    |---|---|
+    |Not Urgent|1673044|
+    |Urgent|16761095|
+    |Very Urgent|14431557|
+    |Past Due|7107965|
+
+    Headers:
+    ```
+    {}
+    ```
+
+    Body:
+    ```
+    {
+      "username": "LubeLogger",
+      "avatar_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png",
+      "content": "{message}",
+      "embeds": [
+        {
+          "title": "{title}",
+          "url": "{link}",
+          "description": "{message}",
+          "color":{priority},
+          "author": {
+            "name": "LubeLogger",
+            "url": "{domain}",
+            "icon_url": "https://hargata.github.io/hargata/lubelogger_logo_small.png"
+          }
+        }
+      ]
+    }
+    ```
 
 Next Steps: [Configuring Authentication](/Installation/Authentication)

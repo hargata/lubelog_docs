@@ -74,4 +74,11 @@ For the reasons above, it is highly recommended that you create a second user fo
 | Make/Restore Backups   | No                                        | No                                        | Yes                    |
 | Disable Authentication | No                                        | No                                        | Yes                    |
 
+### Managing Users
+From the Admin Panel, an admin user can also revoke and scramble password for a user as well as manage the user's household.
+
+Revoking a user's password involves clearing out the user's password within the database(it will be set to an empty string), when a user's password is revoked, they will not be able to login via Username/Password on LubeLogger's login screen and is also unable to reset their password nor update their password via User Profile. This is useful for temporarily preventing a user from logging in without deleting their user account OR if you want to force the user to login via OIDC only.
+
+Scrambling a user's password involves resetting the user's password to a randomly generated hash, the user will need to reset their password on their next login; the admin user who scrambled the user's password does not have access to the new password.
+
 Next Steps: [Adding Vehicles](/Vehicles/Vehicle Management)

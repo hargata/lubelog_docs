@@ -16,6 +16,7 @@ Scheduled Release TBD
     - Add option to toggle vehicle thumbnail resize(Issue: #1353)
     - Add feature to create plan record template from existing record(Issue: #427)
     - Add API key auth for vehicle thumbnail and documents(Issue: #1360)
+    - Add feature for admins to revoke or reset user passwords(Issue: #1365)
 - Misc
     - Update dependencies
     - Minor code refactor related to SMTP methods

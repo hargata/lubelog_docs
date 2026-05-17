@@ -43,6 +43,7 @@ LUBELOGGER_CUSTOM_WIDGETS=true/false(default: false) - Allow Custom Widgets to b
 LUBELOGGER_INVARIANT_API=true/false(default: false) - whether API response should be invariant
 LUBELOGGER_OPEN_REGISTRATION=true/false(default: false) - Allow users to generate their own registration token
 LUBELOGGER_DOMAIN="" - URL to Instance of LubeLogger used to generate email links
+LUBELOGGER_SECRETS_PATH="" - Folder path for file-based secrets
 ```
 
 ## Sample Config Files

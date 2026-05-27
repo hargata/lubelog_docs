@@ -39,7 +39,7 @@ Please [contact us via email](mailto:hargatasoftworks@gmail.com) to set somethin
 
 ## Anonymous Donation via Stripe
 
-[Donate via Stripe](https://buy.stripe.com/aEU9Egc8DdMc9bO144)
+[Donate via Stripe](https://donate.stripe.com/dRm8wP18nckicuY6Sbdwc02)
 
 Donating via Stripe allows you to fund specific features using the "Issue #" Field, but your name won't be displayed under the sponsors section. This method is ideal if you wish to maintain anonymity.
 

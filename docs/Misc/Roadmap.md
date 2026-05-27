@@ -5,7 +5,7 @@ Released 05/27/2026
 
 ### Objectives
 - Misc
-    - Updated Stripe Donation Link
+    - Update Stripe Donation Link
     - Update dependencies
 
 ## 1.6.5

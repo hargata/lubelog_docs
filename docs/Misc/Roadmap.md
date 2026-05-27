@@ -1,5 +1,12 @@
 # Roadmap
 
+## 1.6.6
+
+### Objectives
+- Misc
+    - Updated Stripe Donation Link
+    - Update dependencies
+
 ## 1.6.5
 Released 05/16/2026
 

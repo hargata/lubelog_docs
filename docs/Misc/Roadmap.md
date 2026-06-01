@@ -1,5 +1,18 @@
 # Roadmap
 
+## 1.6.7
+
+### Objectives
+- Bug Fixes
+    - Fixed context menu navigation from garage bug
+    - Fixed event hub refreshing wrong tab
+- Features
+    - Preserve field options when switching between radio and checks(Issue: #1378)
+    - Add feature to re-order field options(Issue: #1378)
+    - Add filter for depleted supplies(Issue: #984)
+- Misc
+    - Minor code cleanup
+
 ## 1.6.6
 Released 05/27/2026
 

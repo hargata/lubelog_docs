@@ -1,5 +1,17 @@
 # Roadmap
 
+## 1.6.8
+Released 06/25/2026
+
+### Objectives
+- Bug Fixes
+    - Fixed Path Traversal/IDOR vulnerabilities(Issue: #1398)
+    - Fixed default LubeLogger icon cropping(Issue: #1392)
+- Features
+    - Added shift click to select contiguous range of table rows(PR: #1396)
+- Misc
+    - Update dependencies
+
 ## 1.6.7
 Released 06/02/2026
 

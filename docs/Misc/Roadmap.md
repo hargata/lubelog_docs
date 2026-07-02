@@ -1,5 +1,13 @@
 # Roadmap
 
+## 1.6.9
+Scheduled Release TBD
+
+### Objectives
+- Features
+    - Add SoC for EV Fuel Records(Issue: #817, #1263)
+    - Add feature to remove uploaded vehicle thumbnail(Issue: #1388)
+
 ## 1.6.8
 Released 06/25/2026
 

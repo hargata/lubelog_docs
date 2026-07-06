@@ -4,9 +4,14 @@
 Scheduled Release TBD
 
 ### Objectives
+- Bug Fixes
+    - Fixed shift click bug on table rows when filter is applied
 - Features
     - Add SoC for EV Fuel Records(Issue: #817, #1263)
     - Add feature to remove uploaded vehicle thumbnail(Issue: #1388)
+    - Add search feature in Translation Downloader
+    - Add shift click to vehicle tiles in garage
+    - Add functionality to duplicate supplies to shop supplies(Issue: #1405)
 
 ## 1.6.8
 Released 06/25/2026

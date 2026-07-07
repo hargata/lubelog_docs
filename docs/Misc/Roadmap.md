@@ -6,6 +6,7 @@ Scheduled Release TBD
 ### Objectives
 - Bug Fixes
     - Fixed shift click bug on table rows when filter is applied
+    - Fixed odometer records with same ending odometer being out of order(Issue: #1407)
 - Features
     - Add SoC for EV Fuel Records(Issue: #817, #1263)
     - Add feature to remove uploaded vehicle thumbnail(Issue: #1388)

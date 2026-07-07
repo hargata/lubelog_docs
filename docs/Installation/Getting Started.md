@@ -10,7 +10,7 @@ You will then clone [docker-compose.yml](https://github.com/hargata/lubelog/blob
 
 Run the following commands to pull down the image and run container.
 ```
-docker pull ghcr.io/hargata/lubelogger:latest
+docker compose pull
 docker compose up -d
 ```
 By default the app will start listening at localhost:8080, this port can be configured in the docker-compose file.

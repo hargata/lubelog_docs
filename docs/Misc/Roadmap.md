@@ -13,6 +13,7 @@ Scheduled Release TBD
     - Add search feature in Translation Downloader
     - Add shift click to vehicle tiles in garage
     - Add functionality to duplicate supplies to shop supplies(Issue: #1405)
+    - Add tab navigation to Server Settings Configurator
 
 ## 1.6.8
 Released 06/25/2026

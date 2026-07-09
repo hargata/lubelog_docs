@@ -1,7 +1,7 @@
 # Roadmap
 
 ## 1.6.9
-Scheduled Release TBD
+Released 07/08/2026
 
 ### Objectives
 - Bug Fixes

@@ -1,5 +1,16 @@
 # Roadmap
 
+## 1.7.0
+Scheduled Release TBD
+
+### Objectives
+- Bug Fixes
+   - Fixed Fuel Record Add/Update API methods(Issue: #1410)
+- Features
+   - Add Delete endpoint for Vehicles via API(PR: #1401)
+- Misc
+   - Add EV example for Fuel Record Add/Update API Method
+
 ## 1.6.9
 Released 07/08/2026
 

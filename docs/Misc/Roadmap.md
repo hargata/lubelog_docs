@@ -6,6 +6,7 @@ Scheduled Release TBD
 ### Objectives
 - Bug Fixes
    - Fixed Fuel Record Add/Update API methods(Issue: #1410)
+   - Fixed Fuel Unit Cost calculation for EV records(Issue: #1412)
 - Features
    - Add Delete endpoint for Vehicles via API(PR: #1401)
 - Misc

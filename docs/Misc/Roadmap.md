@@ -9,6 +9,7 @@ Scheduled Release TBD
     - Fixed Fuel Unit Cost calculation for EV records(Issue: #1412)
 - Features
     - Add Delete endpoint for Vehicles via API(PR: #1401)
+    - Add custom theme support(PR: #961)
 - Misc
     - Add EV example for Fuel Record Add/Update API Method
 

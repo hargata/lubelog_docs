@@ -106,6 +106,25 @@ Common issues and steps you can take to fix them.
     This problem is specific to the Windows Standalone Executable, the problem stems from the fact that Kestrel is configured by default to listen on and only on `localhost`. In order to get around this, you will need to retrieve the IPv4 address of your local machine, and add configure the HTTP Endpoint via the Server Settings Configurator. Additionally, see [Setting up HTTPS](/Advanced/HTTPS) for HTTPS/SSL Cert Configuration
 
 
+## Server / Container Issues
+
+??? question "Container Randomly Restarts / Container takes up 100% of Memory"
+
+    This is most likely caused by your container orchestration tool over-allocating resources to the LubeLogger container, set a memory limit for the container and adjust it as needed.
+
+??? question "Performance Issues"
+
+    You might just be running underpowered hardware or under-allocated resources to the LubeLogger container.
+    For reference, the demo instance which sees about 5k+ traffic everyday from humans and bots alike, has the following setup:
+    ```
+    VM.Standard.E2.1.Micro
+    Memory Limit: 150MB
+    ```
+
+??? info "Troubleshooting Server or Container-related Issues"
+
+    No support will be rendered by the maintainers, as we cannot and will not attempt to replicate your set up. Your issue will be closed as cannot reprod.
+
 ## Networking Issues
 
 ### NGINX / Cloudflare 

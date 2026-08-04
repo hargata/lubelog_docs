@@ -1,5 +1,16 @@
 # Roadmap
 
+## 1.7.1
+Scheduled Release TBD
+
+### Objectives
+- Bug Fixes
+    - Fix IDOR vulnerabilities
+- Features
+    - Add persistent dialog to prevent modal closing from stray clicks(Issue: #1420)
+- Misc
+    - Settings Page Revamp(#953)
+
 ## 1.7.0
 Released 07/13/2026
 

@@ -10,6 +10,7 @@ Scheduled Release TBD
     - Add persistent dialog to prevent modal closing from stray clicks(Issue: #1420)
 - Misc
     - Settings Page Revamp(#953)
+    - Update dependencies
 
 ## 1.7.0
 Released 07/13/2026

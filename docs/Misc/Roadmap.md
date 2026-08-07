@@ -5,7 +5,7 @@ Scheduled Release TBD
 
 ### Objectives
 - Bug Fixes
-    - Fix IDOR vulnerabilities
+    - Fix IDOR vulnerabilities(#1433)
 - Features
     - Add persistent dialog to prevent modal closing from stray clicks(Issue: #1420)
 - Misc

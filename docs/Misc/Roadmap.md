@@ -8,9 +8,11 @@ Scheduled Release TBD
     - Fix IDOR vulnerabilities(#1433)
 - Features
     - Add persistent dialog to prevent modal closing from stray clicks(Issue: #1420)
+    - Remember Me option now persists on login page
 - Misc
     - Settings Page Revamp(#953)
     - Update dependencies
+    - Refactored code for error handling and static files routing
 
 ## 1.7.0
 Released 07/13/2026

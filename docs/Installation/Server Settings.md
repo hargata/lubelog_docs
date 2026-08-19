@@ -4,7 +4,7 @@ The Server Settings Configurator allows you to configure server-wide settings su
 
 You can access the Server Settings Configurator from within the Settings tab or via `/setup`
 
-![alt text](images/1773778573003-image.png)
+![alt text](images/1787149755500-image.png)
 
 ## Skipped Settings
 

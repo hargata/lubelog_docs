@@ -2,7 +2,7 @@
 
 If you require more fields than what is provided in LubeLogger, you can easily add more fields via the Additional Fields Manager located in the Settings tab. You have to be logged in as the root user in order to access this feature.
 
-![alt text](images/1773780958953-image.png)
+![alt text](images/1787150000963-image.png)
 
 The Additional Fields Manager contains a dropdown that contains the records you can append additional tabs to along with a list of additional fields for that record.
 

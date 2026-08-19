@@ -10,7 +10,7 @@ Regardless of how your LubeLogger instance is installed/configured, we highly re
 
 Login as the root/superuser to your LubeLogger instance, navigate to the Settings tab and create a backup
 
-![alt text](images/1773780803413-image.png)
+![alt text](images/1787149948887-image.png)
 
 A zip file will be downloaded to your computer.
 

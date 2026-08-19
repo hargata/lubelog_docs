@@ -5,7 +5,7 @@ LubeLogger does not require authentication by default; however, it is highly rec
 ## Enabling Authentication
 To enable authentication, all you have to do is navigate to the "Settings" tab and check "Enable Authentication".
 
-![alt text](images/1773776208367-image.png)
+![alt text](images/1787149829589-image.png)
 
 A dialog will then prompt you to enter a username and password. These are the credentials for the Root/Super User.
 

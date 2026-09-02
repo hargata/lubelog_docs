@@ -1,5 +1,13 @@
 # Roadmap
 
+## 1.7.2
+Released 09/02/2026
+
+### Objectives
+- Bug Fixes
+    - Fix API key auth access to `/temp`(Issue: #1445)
+    - Fix Duplicate Records to Vehicles bug(Issue: #1453)
+
 ## 1.7.1
 Released 08/19/2026
 

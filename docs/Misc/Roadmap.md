@@ -1,6 +1,7 @@
 # Roadmap
 
 ## 1.7.3
+Released 09/12/2026
 
 ### Objectives
 - Bug Fixes

@@ -8,6 +8,7 @@
     - Fix attachment preview bug(Issue: #1460)
 - Features
     - Add `and/or` operators for vehicle image tags(Issue: #1391)
+    - Add feature to enable wrapping on notes column(Issue: #1441)
 
 ## 1.7.2
 Released 09/02/2026

@@ -28,14 +28,18 @@ A vehicle map is an image of the vehicle that has interactive clickable elements
 			"Coordinates": "",
 			"Color": "#",
 			"Shape": "",
-			"Opacity": 0.5
+			"Opacity": 0.5,
+			"HoverOpacity": 0.75,
+			"Operation": "or"
 		},
 		{
 			"Tags": "",
 			"Coordinates": "",
 			"Color": "#",
 			"Shape": "",
-			"Opacity": 0.5
+			"Opacity": 0.5,
+			"HoverOpacity": 0.75,
+			"Operation": "and"
 		}
 	]
 }
@@ -49,7 +53,17 @@ A vehicle map is an image of the vehicle that has interactive clickable elements
 - Map.Color refers to the color of the overlay
 - Map.Shape refers to the shape(circle or polygon, optional, defaults to polygon)
 - Map.Opacity refers to the opacity of the overlay(values range from 0.0 to 1.0, 0.0 is completely transparent and 1.0 is completely opaque)
+- Map.HoverOpacity refers to the opacity of the overlay when the mouse cursor hovers over it(value ranges from 0.0 to 1.0)
+- Map.Operation refers to how the tags are used to filter records(valid values: `and`, `or`, defaults to `or`)
 - Trailing Commas are not supported and must be truncated
+
+#### Tags Filter Operation
+
+Starting in version 1.7.3, the vehicle image map supports different tag filter operations.
+
+OR(Default): Matches records that have at least one tag in the `Tags` filter. Meaning that if the filter is `tires axles` it will return records tagged with either `tires`, `axles`, or both
+
+AND: Matches records that have all of the tags in the `Tags` filter. Meaning that if the filter is `tires axles` it will only return records tagged with both `tires` and `axles`. Not limited to just those tags, so records tagged with `tires`, `axles`, and `front` will also be returned.
 
 ### Circles
 

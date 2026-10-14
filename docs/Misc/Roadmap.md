@@ -1,5 +1,17 @@
 # Roadmap
 
+## 1.7.4
+Released 10/14/2026
+
+### Objectives
+- Bug Fixes
+    - Fix API key permission when adding vehicles(Issue: #1481)
+    - Fix negative number parsing issue with certain locales(PR: #1485 by [mikecrawford99](https://github.com/mikecrawford99))
+- Features
+    - Improve Equipment Odometer Records UI
+- Misc
+    - Update dependencies
+
 ## 1.7.3
 Released 09/12/2026
 

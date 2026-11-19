@@ -1,5 +1,14 @@
 # Roadmap
 
+## 1.7.5
+Released 11/19/2026
+
+### Objectives
+- Bug Fixes
+    - Fix security vulnerabilities(Issue: #1516)
+- Misc
+    - Update dependencies
+
 ## 1.7.4
 Released 10/14/2026
 
